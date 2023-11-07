@@ -1,0 +1,118 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix gkbi: <https://geokb.wikibase.cloud/wiki/Item:> .
+@prefix gkbp: <https://geokb.wikibase.cloud/wiki/Property:> .
+@prefix mndr: <https://minmod.isi.edu/resource/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+mndr:Q0 a mndr:MineralSite ;
+    mndr:id "BRMica001 (demo)" ;
+    mndr:name "Blue Ridge Mica Deposit (demo)" ;
+    mndr:mineral_inventory mndr:Q1 ;
+    mndr:location_info mndr:Q2 ;
+    mndr:geology_info mndr:Q11 ;
+    mndr:same_as mndr:Q3 .
+
+mndr:Q1 a mndr:MineralInventory ;
+    mndr:id "Inv001 (demo)" ;
+    mndr:deposit_type mndr:Q4 ;
+    mndr:commodity mndr:Q5 ;
+    mndr:category "measured" ;
+    mndr:ore mndr:Q6 ;
+    mndr:grade mndr:Q7 ;
+    mndr:contained_metal 1000 ;
+    mndr:reference mndr:Q8 ;
+    mndr:zone "Zone 1" ;
+    mndr:date "2023-09-29T00:00:00Z" .
+
+mndr:Q2 a mndr:LocationInfo ;
+    mndr:location "POINT( -82.265278 35.764722)"^^geo:wktLiteral ;
+    mndr:location_source "MRDS" ;
+    mndr:crs "WGS84" ;
+    mndr:location_source_record_id "Location Source Record Id (demo)" ;
+    mndr:country "USA" ;
+    mndr:state_or_province "North Carolina" .
+
+mndr:Q11 a mndr:GeologyInfo ;
+    mndr:age "100" ;
+    mndr:unit_name "Mica (demo)" ;
+    mndr:description "This is a demo mica (demo)" ;
+    mndr:lithology "alkali feldspar, quartz (demo)" ;
+    mndr:process "erorsion (demo)" ;
+    mndr:environment "Supergene (demo)" ;
+    mndr:comments "An mica comment (demo) " .
+
+mndr:Q3 a mndr:SameAs ;
+    mndr:MRDS_ID "10289747 (demo)" ;
+    mndr:USMIN_ID "ID00055 (demo)" .
+
+mndr:Q4 owl:sameAs gkbi:Q26199 .
+
+mndr:Q5 owl:sameAs gkbi:Q392 .
+
+mndr:Q6 a mndr:Ore ;
+    mndr:ore_unit "metric tonnes" ;
+    mndr:ore_value 50000 .
+
+mndr:Q7 a mndr:Grade ;
+    mndr:grade_unit "percent" ;
+    mndr:grade_value 2 .
+
+mndr:Q8 a mndr:Reference ;
+    mndr:id "Ref001" ;
+    mndr:document mndr:Q9 ;
+    mndr:page 12 ;
+    mndr:bounding_box mndr:Q10 .
+
+mndr:Q9 a mndr:Document ;
+    mndr:id "Doc001" ;
+    mndr:title "Mica Deposits in Blue Ridge (demo)" ;
+    mndr:doi "10.1234/mica.br.001" ;
+    mndr:uri <https://mrdata.usgs.gov/pp577/> ;
+    mndr:authors ("J. Doe" "A. Smith") ;
+    mndr:journal "Geological Studies (demo)" ;
+    mndr:year 2023 ;
+    mndr:month 9 ;
+    mndr:volume 10 ;
+    mndr:issue 3 ;
+    mndr:description "A study on Mica deposits in the Blue Ridge area. (demo)" .
+
+mndr:Q9 owl:sameAs gkbi:Q5 .
+
+mndr:doi  owl:sameAs gkbp:P74 .
+
+mndr:uri  owl:sameAs gkbp:P136 .
+
+mndr:authors  owl:sameAs gkbp:P102 .
+
+mndr:Q10 a mndr:BoundingBox ;
+    mndr:x_min 10 ;
+    mndr:x_max 20 ;
+    mndr:y_min 30 ;
+    mndr:y_max 40 .
+
+mndr:Q12 a mndr:MappableCriteria ;
+    mndr:criteria "Critera001 (demo)" ;
+    mndr:theoretical "theory (demo)" ;
+    mndr:potential_dataset "dataset (demo)" ;
+    mndr:references (mndr:Q8) .
+
+mndr:Q13 a mndr:MineralSystem ;
+    mndr:deposit_type mndr:Q4 ;
+    mndr:trigger (mndr:Q12) ;
+    mndr:source_fluid (mndr:Q12) ;
+    mndr:source_ligand (mndr:Q12) ;
+    mndr:source_metal (mndr:Q12) ;
+    mndr:source_other (mndr:Q12) ;
+    mndr:conduit (mndr:Q12) ;
+    mndr:driver (mndr:Q12) ;
+    mndr:throttle (mndr:Q12) ;
+    mndr:trap (mndr:Q12) ;
+    mndr:dispersion (mndr:Q12) ;
+    mndr:exhumation (mndr:Q12) ;
+    mndr:direct_detection (mndr:Q12) .
