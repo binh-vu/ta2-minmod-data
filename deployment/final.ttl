@@ -183,7 +183,7 @@ mndr:DepositType
 
 mndr:Commodity
     a rdfs:Class ;
-    owl:sameAs gkbi:Q5;
+    owl:sameAs gkbi:Q406;
     rdfs:comment "commodity of mineral inventory"@en ;
     rdfs:label "Commodity"@en .
 
@@ -353,6 +353,7 @@ mndr:document
 
 mndr:Document
     a rdfs:Class ;
+    owl:sameAs gkbi:Q5;
     rdfs:comment "Document from which mineral inventory info is extracted"@en ;
     rdfs:label "Document"@en .
 
@@ -622,10 +623,6 @@ mndr:Q2 a mndr:LocationInfo ;
 mndr:Q4 a mndr:DepositType ;
     mndr:id "0" ;
     mndr:name "Sedex Type Deposits" .
-
-mndr:DepositType  owl:sameAs gkbi:Q26097 .
-
-mndr:Commodity  owl:sameAs gkbi:Q406 .
 
 
 mndr:Q5 a mndr:Commodity ;
