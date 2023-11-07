@@ -188,7 +188,7 @@ mndr:Q14 a mndr:MappableCriteria ;
     mndr:criteria "The paragraph suggests that extensional faults and dolomitization of limestone are mappable criteria that represent the pathway for the formation and localization of syn-diagenetic Zn-Pb deposits in the MVT deposit type.";
     mndr:theoretical "N/A" ;
     mndr:potential_dataset "N/A" ;
-    mndr:supporting_references mndr:Q11 .
+    mndr:supporting_references mndr:Q15 .
 
 mndr:Q15 a mndr:Reference ;
     mndr:id "SIR10-5070C" ;
@@ -232,7 +232,7 @@ mndr:Q24 a mndr:DepositType ;
 
 mndr:Q23 a mndr:MineralSystem ;
     mndr:deposit_type mndr:Q24;
-    mndr:source mndr:Q14;
+    mndr:source mndr:Q10;
     mndr:trap mndr:Q17;
     mndr:conduit mndr:Q14;
     mndr:exhumation mndr:Q20.
