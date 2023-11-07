@@ -790,100 +790,132 @@ mndr:Q23 a mndr:MineralSystem ;
 
 
 mndr:Q10101 a mndr:Grade;
-	mndr:grade_value ">10%";
+	mndr:grade_value 10;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10102 a mndr:Grade;
-	mndr:grade_value ">10%";
+	mndr:grade_value 10;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10103 a mndr:Grade;
-	mndr:grade_value ">10%";
+	mndr:grade_value 10;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10104 a mndr:Grade;
-	mndr:grade_value ">10%";
+	mndr:grade_value 10;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10105 a mndr:Grade;
-	mndr:grade_value ">9%";
+	mndr:grade_value 9;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10106 a mndr:Grade;
-	mndr:grade_value ">9%";
+	mndr:grade_value 9;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10107 a mndr:Grade;
-	mndr:grade_value ">9%";
+	mndr:grade_value 9;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10108 a mndr:Grade;
-	mndr:grade_value ">9%";
+	mndr:grade_value 9;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10109 a mndr:Grade;
-	mndr:grade_value ">8%";
+	mndr:grade_value 8;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101010 a mndr:Grade;
-	mndr:grade_value ">8%";
+	mndr:grade_value 8;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101011 a mndr:Grade;
-	mndr:grade_value ">8%";
+	mndr:grade_value 8;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101012 a mndr:Grade;
-	mndr:grade_value ">8%";
+	mndr:grade_value 8;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101013 a mndr:Grade;
-	mndr:grade_value ">7%";
+	mndr:grade_value 7;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101014 a mndr:Grade;
-	mndr:grade_value ">7%";
+	mndr:grade_value 7;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101015 a mndr:Grade;
-	mndr:grade_value ">7%";
+	mndr:grade_value 7;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101016 a mndr:Grade;
-	mndr:grade_value ">7%";
+	mndr:grade_value 7;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101017 a mndr:Grade;
-	mndr:grade_value ">6%";
+	mndr:grade_value 6;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101018 a mndr:Grade;
-	mndr:grade_value ">6%";
+	mndr:grade_value 6;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101019 a mndr:Grade;
-	mndr:grade_value ">6%";
+	mndr:grade_value 6;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101020 a mndr:Grade;
-	mndr:grade_value ">6%";
+	mndr:grade_value 6;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101021 a mndr:Grade;
-	mndr:grade_value ">5%";
+	mndr:grade_value 5;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101022 a mndr:Grade;
-	mndr:grade_value ">5%";
+	mndr:grade_value 5;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101023 a mndr:Grade;
-	mndr:grade_value ">5%";
+	mndr:grade_value 5;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101024 a mndr:Grade;
-	mndr:grade_value ">5%";
+	mndr:grade_value 5;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101025 a mndr:Grade;
-	mndr:grade_value ">4%";
+	mndr:grade_value 4;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101026 a mndr:Grade;
-	mndr:grade_value ">4%";
+	mndr:grade_value 4;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101027 a mndr:Grade;
-	mndr:grade_value ">4%";
+	mndr:grade_value 4;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101028 a mndr:Grade;
-	mndr:grade_value ">4%";
+	mndr:grade_value 4;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101029 a mndr:Grade;
-	mndr:grade_value ">3%";
+	mndr:grade_value 3;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101030 a mndr:Grade;
-	mndr:grade_value ">3%";
+	mndr:grade_value 3;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101031 a mndr:Grade;
-	mndr:grade_value ">3%";
+	mndr:grade_value 3;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q101032 a mndr:Grade;
-	mndr:grade_value ">3%";
+	mndr:grade_value 3;
+	mndr:grade_unit <https://minmod.isi.edu/resource/Q200>;
 	.
 mndr:Q10201 a mndr:Ore;
 	mndr:ore_value 543000;
