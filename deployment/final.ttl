@@ -1338,7 +1338,7 @@ mndr:Q104032 a mndr:MineralInventory;
 	mndr:ore mndr:Q102032;
 	mndr:grade mndr:Q103032;
 	.
-mndr:Q00 mndr:mineral_inventory mndr:Q10401;
+mndr:Q0 mndr:mineral_inventory mndr:Q10401;
     mndr:mineral_inventory mndr:Q10402;
     mndr:mineral_inventory mndr:Q10404;
     mndr:mineral_inventory mndr:Q10405;
