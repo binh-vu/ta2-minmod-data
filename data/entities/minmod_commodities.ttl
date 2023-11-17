@@ -1,0 +1,369 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mndr: <https://minmod.isi.edu/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gkbi: <https://geokb.wikibase.cloud/entity/> .
+@prefix drepr: <https://purl.org/drepr/1.0/> .
+
+
+<mndr:Q501> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q407>;
+	mndr:name "abrasive";
+	.
+<mndr:Q502> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q408>;
+	mndr:name "corundum abrasive";
+	.
+<mndr:Q503> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q409>;
+	mndr:name "emery abrasive";
+	.
+<mndr:Q504> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q410>;
+	mndr:name "garnet abrasive";
+	.
+<mndr:Q505> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q472>;
+	mndr:name "light weight aggregate";
+	.
+<mndr:Q506> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q293>;
+	mndr:name "aluminum";
+	.
+<mndr:Q507> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q412>;
+	mndr:name "contained or metal aluminum";
+	.
+<mndr:Q508> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q413>;
+	mndr:name "high alumina clay aluminum";
+	.
+<mndr:Q509> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q414>;
+	mndr:name "andalusite";
+	.
+<mndr:Q510> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q295>;
+	mndr:name "antimony";
+	.
+<mndr:Q511> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q297>;
+	mndr:name "arsenic";
+	.
+<mndr:Q512> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q415>;
+	mndr:name "Asbestos";
+	.
+<mndr:Q513> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q419>;
+	mndr:name "barium-barite";
+	.
+<mndr:Q514> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q302>;
+	mndr:name "bismuth";
+	.
+<mndr:Q515> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q418>;
+	mndr:name "boron-borates";
+	.
+<mndr:Q516> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q306>;
+	mndr:name "cadmium";
+	.
+<mndr:Q517> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q434>;
+	mndr:name "carbon dioxide";
+	.
+<mndr:Q518> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q420>;
+	mndr:name "cement rock";
+	.
+<mndr:Q519> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q313>;
+	mndr:name "chromium";
+	.
+<mndr:Q520> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q440>;
+	mndr:name "ferrochrome chromium";
+	.
+<mndr:Q521> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q421>;
+	mndr:name "clay";
+	.
+<mndr:Q522> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q422>;
+	mndr:name "ball clay";
+	.
+<mndr:Q523> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q424>;
+	mndr:name "bloating material clay";
+	.
+<mndr:Q524> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q423>;
+	mndr:name "brick clay";
+	.
+<mndr:Q525> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q426>;
+	mndr:name "chlorite clay";
+	.
+<mndr:Q526> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q428>;
+	mndr:name "fire (refractory) clay ";
+	.
+<mndr:Q527> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q427>;
+	mndr:name "fullers earth clay";
+	.
+<mndr:Q528> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q430>;
+	mndr:name "general clay";
+	.
+<mndr:Q529> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q429>;
+	mndr:name "glauconite clay";
+	.
+<mndr:Q530> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q431>;
+	mndr:name "hectorite clay";
+	.
+<mndr:Q531> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q432>;
+	mndr:name "kaolin clay";
+	.
+<mndr:Q532> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q433>;
+	mndr:name "montmorillonite clay";
+	.
+<mndr:Q533> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q436>;
+	mndr:name "anthracite coal";
+	.
+<mndr:Q534> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q437>;
+	mndr:name "bituminous coal";
+	.
+<mndr:Q535> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q438>;
+	mndr:name "lignite coal";
+	.
+<mndr:Q536> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q439>;
+	mndr:name "subbituminous coal";
+	.
+<mndr:Q537> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q314>;
+	mndr:name "cobalt";
+	.
+<mndr:Q538> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q315>;
+	mndr:name "copper";
+	.
+<mndr:Q539> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q441>;
+	mndr:name "oxide copper";
+	.
+<mndr:Q540> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q442>;
+	mndr:name "sulfide copper";
+	.
+<mndr:Q541> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q444>;
+	mndr:name "dolomite";
+	.
+<mndr:Q542> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q449>;
+	mndr:name "feldspar";
+	.
+<mndr:Q543> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q446>;
+	mndr:name "fluorine-fluorite";
+	.
+<mndr:Q544> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q452>;
+	mndr:name "gemstone";
+	.
+<mndr:Q545> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q453>;
+	mndr:name "Diamond";
+	.
+<mndr:Q546> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q454>;
+	mndr:name "emerald";
+	.
+<mndr:Q547> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q456>;
+	mndr:name "Ruby";
+	.
+<mndr:Q548> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q457>;
+	mndr:name "Sapphire";
+	.
+<mndr:Q549> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q458>;
+	mndr:name "semiprecious gemstone";
+	.
+<mndr:Q550> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q459>;
+	mndr:name "geothermal";
+	.
+<mndr:Q551> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q329>;
+	mndr:name "gold";
+	.
+<mndr:Q552> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q417>;
+	mndr:name "refinery gold";
+	.
+<mndr:Q553> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q460>;
+	mndr:name "Graphite";
+	.
+<mndr:Q554> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q461>;
+	mndr:name "carbon graphite";
+	.
+<mndr:Q555> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q463>;
+	mndr:name "gypsum-anhydrite";
+	.
+<mndr:Q556> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q464>;
+	mndr:name "alabaster gypsum-anhydrite";
+	.
+<mndr:Q557> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q330>;
+	mndr:name "hafnium";
+	.
+<mndr:Q558> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q332>;
+	mndr:name "helium";
+	.
+<mndr:Q559> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q335>;
+	mndr:name "indium";
+	.
+<mndr:Q560> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q336>;
+	mndr:name "iodine";
+	.
+<mndr:Q561> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q337>;
+	mndr:name "iron";
+	.
+<mndr:Q562> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q447>;
+	mndr:name "pig iron";
+	.
+<mndr:Q563> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q448>;
+	mndr:name "pyrite iron";
+	.
+<mndr:Q564> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q467>;
+	mndr:name "kyanite";
+	.
+<mndr:Q565> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q342>;
+	mndr:name "lead";
+	.
+<mndr:Q566> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q470>;
+	mndr:name "dimension limestone";
+	.
+<mndr:Q567> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q469>;
+	mndr:name "high calcium limestone";
+	.
+<mndr:Q568> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q471>;
+	mndr:name "ultra pure limestone";
+	.
+<mndr:Q569> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q343>;
+	mndr:name "lithium";
+	.
+<mndr:Q570> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q475>;
+	mndr:name "magnesite";
+	.
+<mndr:Q571> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q346>;
+	mndr:name "manganese";
+	.
+<mndr:Q572> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q477>;
+	mndr:name "ferromanganese manganese";
+	.
+<mndr:Q573> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q349>;
+	mndr:name "mercury";
+	.
+<mndr:Q574> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q476>;
+	mndr:name "Mica";
+	.
+<mndr:Q575> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q478>;
+	mndr:name "mineral pigments";
+	.
+<mndr:Q576> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q350>;
+	mndr:name "molybdenum";
+	.
+<mndr:Q577> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q451>;
+	mndr:name "Natural gas";
+	.
+<mndr:Q578> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q354>;
+	mndr:name "nickel";
+	.
+<mndr:Q579> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q355>;
+	mndr:name "niobium";
+	.
+<mndr:Q580> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q479>;
+	mndr:name "nitrogen-nitrates";
+	.
+<mndr:Q581> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q480>;
+	mndr:name "nonmetal";
+	.
+<mndr:Q582> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q291>;
+	mndr:name "platinum-group elements";
+	.
+<mndr:Q583> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q365>;
+	mndr:name "potassium";
+	.
+<mndr:Q584> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q466>;
+	mndr:name "alum potassium";
+	.
+<mndr:Q585> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q381>;
+	mndr:name "silver";
+	.
+<mndr:Q586> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q411>;
+	mndr:name "refinery silver";
+	.
+<mndr:Q587> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q392>;
+	mndr:name "tin";
+	.
+<mndr:Q588> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q398>;
+	mndr:name "uranium";
+	.
+<mndr:Q589> a mndr:Commodity;
+	owl:sameAs <https://geokb.wikibase.cloud/entity/Q403>;
+	mndr:name "zinc";
+	.
+
