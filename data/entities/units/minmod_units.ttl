@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mndr: <https://minmod.isi.edu/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix gkbi: <https://geokb.wikibase.cloud/entity/> .
+@prefix drepr: <https://purl.org/drepr/1.0/> .
+
+
+<https://minmod.isi.edu/resource/Q200> a mndr:Unit;
+	mndr:unit_name "tonnes";
+	mndr:id <https://minmod.isi.edu/resource/Q200>;
+	.
+<https://minmod.isi.edu/resource/Q201> a mndr:Unit;
+	mndr:unit_name "percent";
+	mndr:id <https://minmod.isi.edu/resource/Q201>;
+	.
