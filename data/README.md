@@ -31,7 +31,7 @@ The domain and ranges of the json keys are highlighted as follows
 - Mineral Site
   * id: ---decide---
   * name: Any valid mineral site name
-  * same_as: 
+  * same_as (list of): 
     * source: source of the mineral site
     * record_id: the record id of the mineral site in the source
   * date: Date, in the 'dd-mm-YYYY' format
@@ -77,7 +77,7 @@ The domain and ranges of the json keys are highlighted as follows
         * volume: Volume of the document, integer
         * issue: Issue number of the document, integer
         * description: Description of the document
-      * page_info: Information about the page where reference of inventory is taken from
+      * page_info: Information about the page where reference of inventory is taken from (list of):
         * page: Page number of the document
         * bounding_box
           * x_min: x axis, minimum value, decimal value
