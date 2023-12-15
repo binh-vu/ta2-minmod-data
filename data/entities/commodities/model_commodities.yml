@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 resources: csv
 preprocessing:
   - type: pmap
@@ -6,7 +6,7 @@ preprocessing:
     code: |
       return "https://geokb.wikibase.cloud/entity/" + value
   - type: pmap
-    path: [ 1.., 0 ]
+    path: [1.., 0]
     code: |
       return "https://minmod.isi.edu/resource/" + value
 attributes:
@@ -24,17 +24,13 @@ alignments:
 semantic_model:
   mndr:Commodity:1:
     properties:
-    - - mndr:name
-      - name
-      - xsd:string
-    - - mndr:sameAs
-      - sameAs
-      - xsd:anyURI
-    - - drepr:uri
-      - minmod_id
-    static_properties:  [ ]
-    inverse_static_properties: [ ]
-    links: [ ]
+      - [drepr:uri, minmod_id]
+      - [rdfs:label, name, xsd:string]
+      - [mndr:name, name, xsd:string]
+      - [mndr:sameAs, sameAs, xsd:anyURI]
+    static_properties: []
+    inverse_static_properties: []
+    links: []
 
   prefixes:
     mndr: https://minmod.isi.edu/resource/

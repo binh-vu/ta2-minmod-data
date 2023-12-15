@@ -1,3 +1,5 @@
-minmod_id,unit name
-Q200,tonnes
-Q201,percent
+minmod_id,unit name,unit aliases
+Q200,tonnes,t
+Q201,percent,%
+Q202,million tonnes,Mt
+Q203,gram per tonne,g/t
