@@ -1,0 +1,69 @@
+{
+  "MineralSite": [
+    {
+      "id": "0",
+      "name": "Bleiberg Project Technical Report",
+      "location_info": {
+        "location": "POINT(394000 5164500)",
+        "country": "Austria",
+        "state_or_province": "Carinthia",
+        "location_source_record_id": "NULL",
+        "location_source": "NULL",
+        "crs": ""
+      },
+      "geology_info": "{}",
+      "same_as": ""
+    }
+  ],
+  "deposit types": [
+    {
+      "id": "https://minmod.isi.edu/resource/Q380"
+    }
+  ],
+  "MineralInventory": [
+    {
+      "id": "0",
+      "commodity": {
+        "id": "",
+        "name": "zinc",
+        "sameAs": "Q589"
+      },
+      "category": "https://minmod.isi.edu/resource/Total",
+      "ore": {
+        "ore_unit": "https://minmod.isi.edu/resource/Q200",
+        "ore_": "12,247,399 "
+      },
+      "grade": {
+        "grade_unit": "https://minmod.isi.edu/resource/Q201",
+        "Grade_": "6"
+      },
+      "cutoff_grade": {
+        "grade_unit": "",
+        "grade_": ""
+      },
+      "contained_metal": "734,843",
+      "reference": {
+        "id": "0",
+        "document": {
+          "id": "doc_id_0",
+          "title": "Bleiberg Project Technical Report",
+          "uri": "",
+          "month": "05",
+          "year": "2017"
+        },
+        "page_info": [
+          {
+            "page": "17",
+            "bounding_box": {
+              "x_min": "",
+              "x_max": "",
+              "y_min": "",
+              "y_max": ""
+            }
+          }
+        ]
+      },
+      "date": "05/2017"
+    }
+  ]
+}
