@@ -12,6 +12,8 @@
 @prefix gkbi:  <https://geokb.wikibase.cloud/entity/> .
 @prefix mndr:  <https://minmod.isi.edu/resource/> .
 @prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix ex:  <http://www.w3.org/ns/prov#> .
+
 
 mndr:MappableCriteria-https___minmod.isi.edu_resource_criteria
         a        sh:PropertyShape ;
@@ -152,10 +154,78 @@ mndr:Document-https___minmod.isi.edu_resource_authors
         a        sh:PropertyShape ;
         sh:path  mndr:authors .
 
-mndr:Reference-https___minmod.isi.edu_resource_page_info
+
+
+ex:MyShape
+	a sh:NodeShape ;
+	sh:targetNode ex:MyInstance ;
+	sh:property [    # _:b1
+		# Violations of sh:minCount and sh:datatype are produced as warnings
+		sh:path ex:myProperty ;
+		sh:minCount 1 ;
+		sh:datatype xsd:string ;
+		sh:severity sh:Warning ;
+	] ;
+	sh:property [    # _:b2
+		# The default severity here is sh:Violation
+		sh:path ex:myProperty ;
+		sh:maxLength 10 ;
+		sh:message "Too many characters"@en ;
+		sh:message "Zu viele Zeichen"@de ;
+	] .
+
+ex:MyInstance
+	ex:myProperty "http://sm.com"^^xsd:anyURI .
+
+mndr:page_info
         a         sh:PropertyShape ;
+        sh:targetClass mndr:PageInfo;
+        sh:severity sh:Warning ;
         sh:class  mndr:PageInfo ;
         sh:path   mndr:page_info .
+
+
+mndr:PageInfo a   sh:NodeShape;
+sh:targetClass mndr:PageInfo;
+        sh:property [
+                		sh:path mndr:page ;
+                		sh:datatype xsd:integer ;
+                	] .
+
+mndr:Reference  a    sh:NodeShape;
+sh:targetClass mndr:Reference;
+        sh:property  mndr:page_info.
+
+mndr:Q11 a mndr:Reference ;
+    mndr:page_info mndr:Q12 .
+
+mndr:Q13 a mndr:PageInfo ;
+    mndr:page 33 .
+
+
+
+# Define a shape for instances of the class ex:Person
+ex:PersonShape
+  a sh:NodeShape ;
+  sh:property [
+    sh:path ex:hasChild ;  # Property path for the hasChild property
+    sh:class ex:Person ;   # Expected class for the hasChild property
+    sh:severity sh:Violation ;
+  ] .
+
+# Data with instances of classes
+ex:John
+  a ex:Person ;
+  ex:hasChild ex:Fido .  # Mistakenly associating hasChild property with an instance of class ex:Animal
+
+ex:Fido
+  a ex:Animal .
+
+
+# mndr:page
+        # a         sh:PropertyShape ;
+        # sh:datatype  xsd:integer ;
+        # sh:path   mndr:page .
 
 mndr:MineralSystem-https___minmod.isi.edu_resource_trap
         a         sh:PropertyShape ;
@@ -164,7 +234,7 @@ mndr:MineralSystem-https___minmod.isi.edu_resource_trap
 
 mndr:LocationInfo-https___minmod.isi.edu_resource_location
         a         sh:PropertyShape ;
-        sh:class  geo:wktLiteral ;
+        sh:datatype  geo:wktLiteral ;
         sh:path   mndr:location .
 
 mndr:LocationInfo  a  rdfs:Class , sh:NodeShape ;
@@ -308,8 +378,8 @@ mndr:MineralSystem-https___minmod.isi.edu_resource_source_ligand
         sh:class  mndr:MappableCriteria ;
         sh:path   mndr:source_ligand .
 
-mndr:Reference  a    sh:NodeShape , rdfs:Class ;
-        sh:property  mndr:Reference-https___minmod.isi.edu_resource_page_info , mndr:Reference-https___minmod.isi.edu_resource_id , mndr:Reference-https___minmod.isi.edu_resource_page .
+#mndr:Reference  a    sh:NodeShape , rdfs:Class ;
+ #       sh:property  mndr:page_info , mndr:Reference-https___minmod.isi.edu_resource_id , mndr:Reference-https___minmod.isi.edu_resource_page .
 
 mndr:MappableCriteria-https___minmod.isi.edu_resource_theoretical
         a        sh:PropertyShape ;
@@ -322,8 +392,14 @@ mndr:DepositType-https___minmod.isi.edu_resource_name
 mndr:GeologyInfo  a  rdfs:Class , sh:NodeShape ;
         sh:property  mndr:GeologyInfo-https___minmod.isi.edu_resource_comments , mndr:GeologyInfo-https___minmod.isi.edu_resource_environment , mndr:GeologyInfo-https___minmod.isi.edu_resource_unit_name , mndr:GeologyInfo-https___minmod.isi.edu_resource_age , mndr:GeologyInfo-https___minmod.isi.edu_resource_process , mndr:GeologyInfo-https___minmod.isi.edu_resource_description , mndr:GeologyInfo-https___minmod.isi.edu_resource_lithology .
 
-mndr:Document  a     sh:NodeShape , rdfs:Class ;
-        sh:property  mndr:Document-https___minmod.isi.edu_resource_title , mndr:Document-https___minmod.isi.edu_resource_id , mndr:Document-https___minmod.isi.edu_resource_issue , mndr:Document-https___minmod.isi.edu_resource_uri , mndr:Document-https___minmod.isi.edu_resource_authors , mndr:Document-https___minmod.isi.edu_resource_description , mndr:Document-https___minmod.isi.edu_resource_doi , mndr:Document-https___minmod.isi.edu_resource_journal , mndr:Document-https___minmod.isi.edu_resource_volume , mndr:Document-https___minmod.isi.edu_resource_year , mndr:Document-https___minmod.isi.edu_resource_month .
+#mndr:Document  a     sh:NodeShape , rdfs:Class ;
+        #sh:property  mndr:Document-https___minmod.isi.edu_resource_title , mndr:Document-https___minmod.isi.edu_resource_id , mndr:Document-https___minmod.isi.edu_resource_issue , mndr:Document-https___minmod.isi.edu_resource_uri , mndr:Document-https___minmod.isi.edu_resource_authors , mndr:Document-https___minmod.isi.edu_resource_description , mndr:Document-https___minmod.isi.edu_resource_doi , mndr:Document-https___minmod.isi.edu_resource_journal , mndr:Document-https___minmod.isi.edu_resource_volume , mndr:Document-https___minmod.isi.edu_resource_year , mndr:Document-https___minmod.isi.edu_resource_month .
+
+mndr:Document  a     sh:NodeShape  ;
+        sh:property [
+                		sh:path mndr:title ;
+                		sh:datatype xsd:string ;
+                	] .
 
 mndr:MineralSystem-https___minmod.isi.edu_resource_source_metal
         a         sh:PropertyShape ;
@@ -946,7 +1022,7 @@ mndr:Q1 a mndr:MineralInventory ;
     mndr:grade mndr:Q7 ;
     mndr:cutoff_grade mndr:Q71 ;
     mndr:contained_metal 112128.19 ;
-    mndr:reference mndr:Q8 ;
+    mndr:reference mndr:Q112 ;
     mndr:date "09-19-2017"^^xsd:date .
 
 mndr:Q112 a mndr:MineralInventory ;
@@ -1039,9 +1115,6 @@ mndr:Q633 a mndr:Ore ;
 mndr:Q733 a mndr:Grade ;
     mndr:grade_unit mndr:Q201 ;
     mndr:grade_value 13.37 .
-
-
-
 
 
 
