@@ -1,59 +1,40 @@
 {
   "MineralSite": [
     {
-      "id": "0",
+      "id": 0,
       "name": "Bleiberg Project Technical Report",
       "location_info": {
-        "location": "POINT(394000 5164500)",
+        "location": "POINT(394000, 5164500)",
         "country": "Austria",
-        "state_or_province": "Carinthia",
-        "location_source_record_id": "NULL",
-        "location_source": "NULL",
-        "crs": ""
+        "state_or_province": "Carinthia"
       },
-      "geology_info": "{}",
-      "same_as": ""
-    }
-  ],
-  "deposit types": [
-    {
-      "id": "https://minmod.isi.edu/resource/Q380"
-    }
-  ],
+ 
   "MineralInventory": [
     {
-      "id": "0",
-      "commodity": {
-        "id": "",
-        "name": "zinc",
-        "sameAs": "Q589"
-      },
+      "id": 0,
+      "commodity": "https://minmod.isi.edu/resource/Q589",
       "category": "https://minmod.isi.edu/resource/Total",
       "ore": {
         "ore_unit": "https://minmod.isi.edu/resource/Q200",
-        "ore_": "12,247,399 "
+        "ore_": 12247399 
       },
       "grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "Grade_": "6"
+        "grade_value": 6
       },
-      "cutoff_grade": {
-        "grade_unit": "",
-        "grade_": ""
-      },
-      "contained_metal": "734,843",
+      "contained_metal": 734843,
       "reference": {
-        "id": "0",
+        "id": 0,
         "document": {
           "id": "doc_id_0",
           "title": "Bleiberg Project Technical Report",
           "uri": "",
-          "month": "05",
-          "year": "2017"
+          "month": 5,
+          "year": 2017
         },
         "page_info": [
           {
-            "page": "17",
+            "page": 17,
             "bounding_box": {
               "x_min": "",
               "x_max": "",
@@ -63,7 +44,14 @@
           }
         ]
       },
-      "date": "05/2017"
+      "date": "2017-05"
     }
+  ],
+  "deposit_type": [
+    {
+      "id": "https://minmod.isi.edu/resource/Q380"
+    }
+  ]
+  }
   ]
 }

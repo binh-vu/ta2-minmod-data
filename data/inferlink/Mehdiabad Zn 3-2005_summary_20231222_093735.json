@@ -1,62 +1,43 @@
 {
   "MineralSite": [
     {
-      "id": "0",
+      "id": 0,
       "name": "Mehdiabad Zinc Project \u2013 Information Memorandum",
       "location_info": {
-        "location": "POINT()",
         "country": "Iran",
         "state_or_province": "Yazd Province",
-        "location_source_record_id": "NULL",
-        "location_source": "Information Memorandum March 2005",
-        "crs": "NULL"
+        "location_source": "Information Memorandum March 2005"
       },
-      "geology_info": "{}",
-      "same_as": ""
-    }
-  ],
-  "deposit types": [
+  "MineralInventory": [
     {
-      "id": "https://minmod.isi.edu/resource/Q377"
-    },
-    {
-      "id": "https://minmod.isi.edu/resource/Q378"
-    }
-  ],
-  "mineralinventory": [
-    {
-      "id": "0",
-      "commodity": {
-        "id": "",
-        "name": "zinc",
-        "sameas": "Q589"
-      },
+      "id": 0,
+      "commodity": "https://minmod.isi.edu/resource/Q589",
       "category": "https://minmod.isi.edu/resource/inferred",
       "ore": {
         "ore_unit": "https://minmod.isi.edu/resource/Q200",
-        "ore_value": "142,684,688"
+        "ore_value": 142684688
       },
       "grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "grade_value": "7.1"
+        "grade_value": 7.1
       },
       "cutoff_grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "grade_value": "4"
+        "grade_value": 4
       },
-      "contained_metal": "10130612",
+      "contained_metal": 10130612,
       "reference": {
-        "id": "0",
+        "id": 0,
         "document": {
           "id": "doc_id_0",
           "title": "mehdiabad zinc project \u2013 information memorandum",
           "uri": "",
-          "month": "03",
-          "year": "2005"
+          "month": 3,
+          "year": 2005
         },
         "page_info": [
           {
-            "page": "7",
+            "page": 7,
             "bounding_box": {
               "x_min": "",
               "x_max": "",
@@ -66,41 +47,37 @@
           }
         ]
       },
-      "date": "03/2005"
+      "date": "2005-03"
     },
     {
-      "id": "1",
-      "commodity": {
-        "id": "",
-        "name": "zinc",
-        "sameas": "Q589"
-      },
+      "id": 1,
+      "commodity": "https://minmod.isi.edu/resource/Q589",
       "category": "https://minmod.isi.edu/resource/indicated",
       "ore": {
         "ore_unit": "https://minmod.isi.edu/resource/Q200",
-        "ore_value": "75,165,938"
+        "ore_value": 75165938
       },
       "grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "grade_value": "7.38"
+        "grade_value": 7.38
       },
       "cutoff_grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "grade_value": "4"
+        "grade_value": 4
       },
-      "contained_metal": "5547246",
+      "contained_metal": 5547246,
       "reference": {
-        "id": "0",
+        "id": 0,
         "document": {
           "id": "doc_id_0",
           "title": "mehdiabad zinc project \u2013 information memorandum",
           "uri": "",
-          "month": "03",
-          "year": "2005"
+          "month": 3,
+          "year": 2005
         },
         "page_info": [
           {
-            "page": "7",
+            "page": 7,
             "bounding_box": {
               "x_min": "",
               "x_max": "",
@@ -110,7 +87,17 @@
           }
         ]
       },
-      "date": "03/2005"
+      "date": "2005-03"
     }
+  ],
+    "deposit_type": [
+      {
+        "id": "https://minmod.isi.edu/resource/Q377"
+      },
+      {
+        "id": "https://minmod.isi.edu/resource/Q378"
+      }
+    ]
+  }
   ]
 }

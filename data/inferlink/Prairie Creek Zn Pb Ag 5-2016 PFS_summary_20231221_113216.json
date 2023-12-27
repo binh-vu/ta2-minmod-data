@@ -1,59 +1,39 @@
 {
   "MineralSite": [
     {
-      "id": "0",
+      "id": 0,
       "name": "Prairie Creek Property Prefeasibility Update NI 43-101 Technical Report",
       "location_info": {
         "location": "POINT(-124.8 61.55)",
         "country": "Canada",
-        "state_or_province": "Northwest Territories",
-        "location_source_record_id": "NULL",
-        "location_source": "NULL",
-        "crs": "NULL"
+        "state_or_province": "Northwest Territories"
       },
-      "geology_info": {},
-      "same_as": ""
-    }
-  ],
-  "deposit types": [
-    {
-      "id": "https://minmod.isi.edu/resource/Q378"
-    }
-  ],
   "MineralInventory": [
     {
-      "id": "0",
-      "commodity": {
-        "id": "",
-        "name": "zinc",
-        "sameAs": "Q589"
-      },
+      "id": 0,
+      "commodity":  "https://minmod.isi.edu/resource/Q589",
       "category": "https://minmod.isi.edu/resource/Classification",
       "ore": {
         "ore_unit": "https://minmod.isi.edu/resource/Q200",
-        "ore_value": "8704"
+        "ore_value": 8704
       },
       "grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "grade_value": "9.5"
-      },
-      "cutoff_grade": {
-        "grade_unit": "https://minmod.isi.edu/resource/",
-        "grade_value": ""
+        "grade_value": 9.5
       },
       "contained_metal": 827.88,
       "reference": {
-        "id": "0",
+        "id": 0,
         "document": {
           "id": "doc_id_0",
           "title": "Prairie Creek Property Prefeasibility Update NI 43-101 Technical Report",
           "uri": "",
-          "month": "02",
-          "year": "2016"
+          "month": 2,
+          "year": 2016
         },
         "page_info": [
           {
-            "page": "103",
+            "page": 103,
             "bounding_box": {
               "x_min": "",
               "x_max": "",
@@ -63,7 +43,14 @@
           }
         ]
       },
-      "date": "02/2016"
+      "date": "2016-02"
     }
+  ],
+  "deposit_type": [
+    {
+      "id": "https://minmod.isi.edu/resource/Q378"
+    }
+    ]
+   }
   ]
 }
