@@ -1277,8 +1277,6 @@ mndr:Grade-https___minmod.isi.edu_resource_grade_value
         sh:path   mndr:grade_value .
 
 """
-print(data_graph)
-
 result = validate(data_graph, shacl_graph=shapes_graph, inference='rdfs', serialize_report_graph=True)
 
 # Check the results

@@ -5,6 +5,7 @@ preprocessing:
     path: [ "MineralSite", .. ]
     code: |
       value = value.copy()
+      print('&&&&&&&&&&')
       if 'deposit_type' not in value:
         value['deposit_type'] = [{}]
       if 'name' not in value:
@@ -19,6 +20,7 @@ preprocessing:
         value['geology_info'] = {}
       else:
         geo = value['geology_info']
+        print('ggggggggggg')
         if 'age' not in geo:
           geo['age'] = -1
         if 'process' not in geo:
@@ -37,6 +39,7 @@ preprocessing:
         value['location_info'] = {}
       else:
         ll = value['location_info']
+        print('llllllll')
         if 'location' not in ll:
           ll['location'] = -1
         if 'country' not in ll:
@@ -49,12 +52,14 @@ preprocessing:
           ll['location_source_record_id'] = -1
         if 'location_source' not in ll:
           ll['location_source'] = -1
-        
+      
+      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "geology_info" ]
     code: |
       value = value.copy()
+      print('ggggggggggg')
       if 'age' not in value:
         value['age'] = -1
       if 'process' not in value:
@@ -69,35 +74,49 @@ preprocessing:
         value['environment'] = -1
       if 'unit_name' not in value:
         value['unit_name'] = -1
+      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "same_as" ]
     code: |
       value = value.copy()
+      print('ssssssssss')
+      print(value)
+      print(len(value))
       if len(value) > 0:
+        print('Len is not 0 .......')
         for v in value:
           if 'source_id' not in v:
             v['source_id'] = -1
           if 'record_id' not in v:
             v['record_id'] = -1
+        print(value)
         return value
       value = [{}]
+      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "deposit_type" ]
     code: |
       value = value.copy()
+      print('dddddddd')
+      print(value)
+      print(len(value))
       if len(value) > 0:
+        print('Len is not 0 .......')
         for v in value:
           if 'id' not in v:
             v['id'] = -1
+        print(value)
         return value
       value = [{}]
+      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "location_info" ]
     code: |
       value = value.copy()
+      print('%%%%%%%%%%')
       if 'location' not in value:
         value['location'] = -1
       if 'country' not in value:
@@ -115,7 +134,11 @@ preprocessing:
     path: [ "MineralSite", .. , "MineralInventory"]
     code: |
       value = value.copy()
+      print('^^^^^^^^^^^^^')
+      print(value)
+      print(len(value))
       if len(value) > 0:
+        print('Len is not 0 .......')
         for v in value:
           if 'category' not in v:
             v['category'] = -1
@@ -137,13 +160,17 @@ preprocessing:
             v['cutoff_grade'] = {'grade_unit': -1, 'grade_value': -1}
           if 'contained_metal' not in v:
             v['contained_metal'] = -1
+        print(value)
         return value
       value = [{}]
+      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "MineralInventory", ..  ]
     code: |
       value = value.copy()
+      print('--------')
+      print(value)
       if 'zone' not in value:
         value['zone'] = -1
       if 'category' not in value:
@@ -164,11 +191,13 @@ preprocessing:
         value['cutoff_grade'] = {'grade_unit': -1, 'grade_value': -1}
       if 'date' not in value:
         value['date'] = -1
+      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "MineralInventory", .. , "reference" ]
     change_structure: false
     code: |
+      print('^^^^^')
       value = value.copy()
       if 'id' not in value:
         value['id'] = -1
@@ -176,11 +205,14 @@ preprocessing:
         value['document'] = {}
       if 'page_info' not in value:
         value['page_info'] = {}
+      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "MineralInventory", .. , "reference", "document" ]
     change_structure: false
     code: |
+      print('------^^^^^-------')
+      print(value)
       if value == -1:
         return value
       value = value.copy()
@@ -211,15 +243,18 @@ preprocessing:
     path: [ "MineralSite", .. , "MineralInventory", .. , "reference", "page_info" ]
     change_structure: false
     code: |
+      print('@@@@@@@')
       if value == -1:
         return value
       value = value.copy()
       if len(value) > 0:
+        print('Len is not 0', value)
         for v in value:
           if 'page' not in v:
             v['page'] = -1
           if 'bounding_box' not in v:
             v['bounding_box'] = {}
+            print('No bounding box')
           else:
             bb = v['bounding_box']
             if 'x_min' not in bb:
@@ -230,13 +265,18 @@ preprocessing:
               bb['y_min'] = -1
             if 'y_max' not in bb:
               bb['y_max'] = -1 
+          print(value)
+        print(value)
         return value
       value = [{"bounding_box": {}, "page": -1}]
+      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "MineralInventory", .. , "reference", "page_info", .., "bounding_box" ]
     change_structure: false
     code: |
+      print('(((((((((((((')
+      print(value)
       value = value.copy()
       if 'x_min' not in value:
         value['x_min'] = -1
@@ -246,6 +286,7 @@ preprocessing:
         value['y_min'] = -1
       if 'y_max' not in value:
         value['y_max'] = -1 
+      print(value)
       return value
 
 attributes:
