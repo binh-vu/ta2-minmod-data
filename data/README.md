@@ -28,60 +28,51 @@ The data types and required fields in the json are highlighted in [schema_file](
 
 The domain and ranges of the json keys are highlighted as follows
 
-- Mineral Site
-  * id: ---decide---
-  * name: Any valid mineral site name
-  * same_as (list of): 
-    * source: source of the mineral site
-    * record_id: the record id of the mineral site in the source
-  * date: Date, in the 'dd-mm-YYYY' format
-  * location_info
-    * location: latitude longitude represented as 'POINT (Lat Long)' in EPSG:4326 format
-    * country: valid name of a country
-    * state_or_province: valid state or province
-    * location_source_record_id: the id of the location in the source being referred to extract location
-    * location_source: valid data source, eg MRDS, MINDAT etc
-    * crs: 
-  * geology_info:
-    * age: 
-    * process: 
-    * lithology: 
-    * comments: comments on the geology info of mineral site
-    * description: description of the geology info of mineral site
-    * environment:
-    * unit_name: 
-  * deposit_type: URI of deposit types in minmod, eg "id": "https://minmod.isi.edu/resource/Q24". List of possible deposit types and their minmod ids are defined in [deposit types](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/depositTypes/minmod_deposit_types.csv)
-  * MineralInventory
-    * id: ---decide---
-    * commodity: URI of commodity in minmod, eg "id": "https://minmod.isi.edu/resource/Q589". List of possible commodities and their minmod ids are defined in [commodities](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/commodities/minmod_commodities.csv)
-    * ore
-      * ore_unit: URI of ore unit in minmod, eg "id": "https://minmod.isi.edu/resource/Q200". List of possible unit names and their minmod ids are defined in [unit names](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/units/minmod_units.csv)
-      * ore_value: Value of ore in units, decimal value
-    * grade
-      * grade_unit: URI of grade unit in minmod, eg "id": "https://minmod.isi.edu/resource/Q201". List of possible unit names and their minmod ids are defined in [unit names](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/units/minmod_units.csv)
-      * grade_value: Value of grade in units, decimal value
-    * cutoff_grade
-      * grade_unit: URI of grade unit in minmod, eg "id": "https://minmod.isi.edu/resource/Q201". List of possible unit names and their minmod ids are defined in [unit names](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/units/minmod_units.csv)
-      * grade_value: Value of grade in units, decimal value
-    * reference
-      * id: ---decide---
-      * document
-        * id: ---decide---
-        * title: Title of the document 
-        * doi: doi of the document 
-        * uri: URI of the document, if it does not have a doi
-        * authors: list of the authors of the document, list of strings
-        * journal: journal document belongs to
-        * year: Published year of the document, in YYYY
-        * month: Published month of the document, in m/mm
-        * volume: Volume of the document, integer
-        * issue: Issue number of the document, integer
-        * description: Description of the document
-      * page_info: Information about the page where reference of inventory is taken from (list of):
-        * page: Page number of the document
-        * bounding_box
-          * x_min: x axis, minimum value, decimal value
-          * x_max: x axis, maximum value, decimal value
-          * y_min: y axis, minimum value, decimal value
-          * y_max: y axis, maximum value, decimal value
-     
+- `MineralSite`
+  * `source_id`: string representing source id of the mineral site
+  * `record_id`: string representing record id of the mineral site
+  * `name`: string representing observed name of the mineral site
+  * `mineral_inventory`
+    * `commodity`: URI of commodity in minmod, e.g.: _https://minmod.isi.edu/resource/Q589_. List of possible commodities and their minmod ids are defined in [commodities](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/commodities/minmod_commodities.csv)
+    * `category`: enum, one of {`INFERRED`, `INDICATED`, `MEASURED`, `PROBABLE`, `PROVEN`, `ORIGINAL_RESOURCE, EXTRACTED, CUMULATIVE_EXTRACTED`}
+    * `ore`
+      * `ore_unit`: URI of ore unit in minmod, e.g.: _https://minmod.isi.edu/resource/Q200_. List of possible unit names and their minmod ids are defined in [unit names](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/units/minmod_units.csv)
+      * `ore_value`: value of ore in units, decimal value
+    * `grade`
+      * `grade_unit`: URI of grade unit in minmod, e.g.: _https://minmod.isi.edu/resource/Q201_. List of possible unit names and their minmod ids are defined in [unit names](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/units/minmod_units.csv)
+      * `grade_value`: value of grade in units, decimal value
+    * `cutoff_grade`
+      * `grade_unit`: URI of grade unit in minmod, e.g.: _https://minmod.isi.edu/resource/Q201_. List of possible unit names and their minmod ids are defined in [unit names](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/units/minmod_units.csv)
+      * `grade_value`: value of grade in units, decimal value
+    * `contained_metal`: quantity of a contained metal in an inventory item, float
+    * `reference`
+      * `document`
+        * `title`: title of the document 
+        * `doi`: doi of the document 
+        * `uri`: URI of the document, if it does not have a doi
+        * `authors`: list of the authors of the document, list of strings
+        * `journal`: journal document belongs to
+        * `year`: published year of the document, in YYYY
+        * `month`: published month of the document, in m/mm
+        * `volume`: volume of the document, integer
+        * `issue`: issue number of the document, integer
+        * `description`: description of the document
+      * `page_info`: information about the page where reference of inventory is taken from (list of):
+        * `page`: page number of the document
+        * `bounding_box`
+          * `x_min`: x axis, minimum value, decimal value
+          * `x_max`: x axis, maximum value, decimal value
+          * `y_min`: y axis, minimum value, decimal value
+          * `y_max`: y axis, maximum value, decimal value
+    * `date`: date, in the 'dd-mm-YYYY' format
+    * `zone`: zone of mineral site where inventory item was discovered 
+  * `location_info`
+    * `location`: latitude longitude represented as `POINT (Lat Long)` in `EPSG:4326` format
+    * `crs`: the coordinate reference system (CRS) in use
+    * `country`: valid name of a country
+    * `state_or_province`: valid state or province
+  * `geology_info`: _TBD_
+  * `deposit_type`: URI of deposit types in minmod, e.g.: _https://minmod.isi.edu/resource/Q24_. List of possible deposit types and their minmod ids are defined in [deposit types](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/depositTypes/minmod_deposit_types.csv)
+  * `same_as` (list of): 
+    * `source`: source of the mineral site
+    * `record_id`: the record id of the mineral site in the source
