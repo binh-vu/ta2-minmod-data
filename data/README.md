@@ -73,14 +73,15 @@ The domain and ranges of the json keys are highlighted as follows
     * `state_or_province`: valid state or province
   * `geology_info`: _TBD_
   * `deposit_type`: URI of deposit types in minmod, e.g.: _https://minmod.isi.edu/resource/Q24_. List of possible deposit types and their minmod ids are defined in [deposit types](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/depositTypes/minmod_deposit_types.csv)
-  * `same_as` (list of): 
-    * `source_id`: source of the mineral site
-    * `record_id`: the record id of the mineral site in the source
 
 ## URI mapping
 The automatic process of the KG (triples) generation will use the following pseudo-code to determine URI of non-blank nodes using concatenation and MD5 hashing to ensure uniqueness
- * `MineralInventory` URI = f(`commodity` (URI), `mineral_site`* (URI), `document`* (URI))`
+ * `MineralInventory` URI = f(`commodity` (URI), `mineral_site`* (URI), `document`* (URI))
  * `MineralSite` URI = f(`source_id`, `record_id`)
  * `Document` URI = f(`doi`, `uri`, `title`, `authors[]`, `year`, `month`)
  
  (* - indirect relation)
+ 
+## Reconciling data
+Matching entities will be denoted using the relation `owl:sameAs`.
+In case new information (i.e., `csv` with two columns denoting the similar entities) is required to be added, the statements will be added as triples: `<e1_minmod_uri> owl:sameAs <e2_minmod_uri>`, etc...
