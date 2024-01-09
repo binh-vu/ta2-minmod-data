@@ -1,12 +1,14 @@
 {
    "MineralSite": [
-            {
-                "id": 0,
+            {   
+              "source_id": "https://w3id.org/usgs/z/4530692/R8GBBQJN",
+                "record_id": 1,
                 "name": "Prairie Creek",  
                 "location_info": {
                   "location": "POINT(-124.8, 61.55)",  
                   "country": "Canada",         
-                  "state_or_province": "British Columbia"
+                  "state_or_province": "British Columbia",
+                  "crs": "WGS84"
               },
                 "MineralInventory": [
         {
@@ -27,9 +29,9 @@
           },
           "contained_metal": 173316,
           "reference": {
-            "id": 0,
+            "id": 1,
             "document": {
-              "id": "doc_id_0",
+              "doi": "https://w3id.org/usgs/z/4530692/R8GBBQJN",
               "title": "Prairie Creek Property Feasibility Study NI 43-101 Technical Report",
               "uri": "",
               "month": 9,

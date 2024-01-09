@@ -1,12 +1,12 @@
 {
   "MineralSite": [
     {
-      "id": 0,
+      "source_id":"https://w3id.org/usgs/z/4530692/N958IUC2",
+      "record_id": 1,
       "name": "Mehdiabad Zinc Project \u2013 Information Memorandum",
       "location_info": {
         "country": "Iran",
-        "state_or_province": "Yazd Province",
-        "location_source": "Information Memorandum March 2005"
+        "state_or_province": "Yazd Province"
       },
   "MineralInventory": [
     {
@@ -29,7 +29,7 @@
       "reference": {
         "id": 0,
         "document": {
-          "id": "doc_id_0",
+          "doi": "https://w3id.org/usgs/z/4530692/N958IUC2",
           "title": "mehdiabad zinc project \u2013 information memorandum",
           "uri": "",
           "month": 3,
@@ -67,9 +67,9 @@
       },
       "contained_metal": 5547246,
       "reference": {
-        "id": 0,
+        "id": 1,
         "document": {
-          "id": "doc_id_0",
+          "doi": "https://w3id.org/usgs/z/4530692/N958IUC2",
           "title": "mehdiabad zinc project \u2013 information memorandum",
           "uri": "",
           "month": 3,
