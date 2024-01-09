@@ -1,5 +1,6 @@
 {
-  "MineralSite": {
+  "MineralSite": [
+    {
     "id": 0,
     "name": "Mina Grand\u00e9 Sur",
     "location_info": {
@@ -8,8 +9,7 @@
       "state_or_province": "Amazonas",
       "location_source_record_id": "Bongara\u0301 Zn 3-2019.pdf",
       "location_source": "Bongar\u00e1 Zn 3-2019"
-    }
-  },
+    },
   "MineralInventory": [
     {
       "id": 0,
@@ -21,11 +21,11 @@
       },
       "grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "grade_value": "18.9"
+        "grade_value": 18.9
       },
       "cutoff_grade": {
-        "cutoff_grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "cutoff_grade_value": 10
+        "grade_unit": "https://minmod.isi.edu/resource/Q201",
+        "grade_value": 10.0
       },
       "contained_metal": 155000000,
       "reference": {
@@ -61,11 +61,11 @@
       },
       "grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "grade_value": "16.8"
+        "grade_value": 16.8
       },
       "cutoff_grade": {
-        "cutoff_grade_unit": "https://minmod.isi.edu/resource/Q201",
-        "cutoff_grade_value": 10
+        "grade_unit": "https://minmod.isi.edu/resource/Q201",
+        "grade_value": 10.0
       },
       "contained_metal": 225000000,
       "reference": {
@@ -96,5 +96,7 @@
     {
       "id": "https://minmod.isi.edu/resource/Q380"
     }
+    ]
+  }
   ]
 }
