@@ -86,9 +86,7 @@ schema = {
                                                     "type": "array",
                                                     "items": {"type": "string"}
                                                 }
-                                            },
-                                            "required": ["id"]
-
+                                            }
                                         },
                                         "page_info": {
                                             "type": "array",
@@ -111,8 +109,7 @@ schema = {
                                             }
 
                                         }
-                                    },
-                                    "required": ["id"]
+                                    }
                                 },
                                 "date": {"type": "string", "format": "date"},
                                 "commodity": {"type": "string"},
