@@ -243,33 +243,38 @@ preprocessing:
     path: [ "MineralSite", .. , "MineralInventory", .. , "reference", "page_info" ]
     change_structure: false
     code: |
-      print('@@@@@@@')
       if value == -1:
         return value
+      print('------yyyyyyyy-------')
+      print(value)
       value = value.copy()
       if len(value) > 0:
-        print('Len is not 0', value)
         for v in value:
           if 'page' not in v:
             v['page'] = -1
           if 'bounding_box' not in v:
             v['bounding_box'] = {}
-            print('No bounding box')
           else:
             bb = v['bounding_box']
             if 'x_min' not in bb:
               bb['x_min'] = -1
+            elif bb['x_min'] == '':
+              bb['x_min'] = -1
             if 'x_max' not in bb:
+              bb['x_max'] = -1
+            elif bb['x_max'] == '':
               bb['x_max'] = -1
             if 'y_min' not in bb:
               bb['y_min'] = -1
+            elif bb['y_min'] == '':
+              bb['y_min'] = -1
             if 'y_max' not in bb:
               bb['y_max'] = -1 
-          print(value)
-        print(value)
+            elif bb['y_max'] == '':
+              bb['y_max'] = -1
+
         return value
       value = [{"bounding_box": {}, "page": -1}]
-      print(value)
       return value
   - type: pmap
     path: [ "MineralSite", .. , "MineralInventory", .. , "reference", "page_info", .., "bounding_box" ]
@@ -280,12 +285,20 @@ preprocessing:
       value = value.copy()
       if 'x_min' not in value:
         value['x_min'] = -1
+      elif value['x_min'] == '':
+          value['x_min'] = -1
       if 'x_max' not in value:
         value['x_max'] = -1
+      elif value['x_max'] == '':
+          value['x_max'] = -1
       if 'y_min' not in value:
         value['y_min'] = -1
+      elif value['y_min'] == '':
+          value['y_min'] = -1
       if 'y_max' not in value:
-        value['y_max'] = -1 
+        value['y_max'] = -1
+      elif value['y_max'] == '':
+          value['y_max'] = -1
       print(value)
       return value
 
@@ -467,6 +480,11 @@ alignments:
   - type: dimension
     source: id_mineral_site
     target: location_info_country
+    aligned_dims:
+      - { source: 1, target: 1 }
+  - type: dimension
+    source: id_mineral_site
+    target: location_info_state
     aligned_dims:
       - { source: 1, target: 1 }
   - type: dimension
@@ -766,11 +784,14 @@ semantic_model:
 
   mndr:LocationInfo:1:
     properties:
-      - [ mndr:location, location_info_location ]
       - [ mndr:country, location_info_country ]
       - [ mndr:location_source_record_id, location_info_location_source_record_id ]
       - [ mndr:location_source, location_info_location_source ]
       - [ mndr:crs, location_info_crs ]
+      - [ mndr:state_or_province, location_info_state ]
+      - - mndr:location
+        - location_info_location
+        - geo:wktLiteral
     links: [ ]
 
   mndr:GeologyInfo:1:
@@ -897,3 +918,4 @@ semantic_model:
     xsd: http://www.w3.org/2001/XMLSchema#
     owl: http://www.w3.org/2002/07/owl#
     drepr: https://purl.org/drepr/1.0/
+    geo: http://www.opengis.net/ont/geosparql#

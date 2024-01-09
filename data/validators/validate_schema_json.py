@@ -8,7 +8,6 @@ print(filename)
 try:
     with open(filename, 'r') as file:
         data_graph = file.read()
-        # print(f"Contents of {filename}:\n{data_graph}")
 except FileNotFoundError:
     print(f"Error: File '{filename}' not found.")
 except Exception as e:
@@ -24,6 +23,8 @@ schema = {
                 "properties" : {
                     "id" : {"type" : "number"},
                     "name" : {"type" : "string"},
+                    "source_id" : {"type" : "string"},
+                    "record_id" : {"type" : "number"},
                     "location_info": {
                         "type": "object",
                         "properties": {
@@ -141,9 +142,18 @@ schema = {
                             "required": ["id"]
                         }
                     },
-                    "same_as" : {"type" : "string"}
+                    "same_as" : {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "source_id": {"type": "string"},
+                                "record_id": {"type": "number"}
+                            }
+                        }
+                    }
                 },
-                "required": ["id", "name"]
+                "required": ["name"]
             }
         }
     }
