@@ -1,14 +1,14 @@
 {
   "MineralSite": [
     {
-    "id": 0,
+    "source_id":"https://w3id.org/usgs/z/4530692/9PXBT6Z9",
+    "record_id": 1,
     "name": "Mina Grand\u00e9 Sur",
     "location_info": {
       "location": "POINT(171425 9367875)",
       "country": "Peru",
       "state_or_province": "Amazonas",
-      "location_source_record_id": "Bongara\u0301 Zn 3-2019.pdf",
-      "location_source": "Bongar\u00e1 Zn 3-2019"
+      "crs": "WGS84"
     },
   "MineralInventory": [
     {
@@ -29,9 +29,9 @@
       },
       "contained_metal": 155000000,
       "reference": {
-        "id": 0,
+        "id": 1,
         "document": {
-          "id": "doc_id_0",
+          "id": "https://w3id.org/usgs/z/4530692/9PXBT6Z9",
           "title": "Bongar\u00e1 Zn 3-2019",
           "uri": "",
           "month": 1,

@@ -1,12 +1,14 @@
 {
   "MineralSite": [
     {
-      "id": 0,
+      "source_id":"https://w3id.org/usgs/z/4530692/CGFRUCNS",
+      "record_id": 1,
       "name": "Bleiberg Project Technical Report",
       "location_info": {
         "location": "POINT(394000, 5164500)",
         "country": "Austria",
-        "state_or_province": "Carinthia"
+        "state_or_province": "Carinthia",
+        "crs": "WGS84"
       },
  
   "MineralInventory": [
@@ -24,9 +26,9 @@
       },
       "contained_metal": 734843,
       "reference": {
-        "id": 0,
+        "id": 1,
         "document": {
-          "id": "doc_id_0",
+          "doi": "https://w3id.org/usgs/z/4530692/CGFRUCNS",
           "title": "Bleiberg Project Technical Report",
           "uri": "",
           "month": 5,

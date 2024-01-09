@@ -1,12 +1,14 @@
 {
   "MineralSite": [
     {
-      "id": 0,
+      "source_id": "https://w3id.org/usgs/z/4530692/SDZT38KU",
+      "record_id": 1,
       "name": "Prairie Creek Property Prefeasibility Update NI 43-101 Technical Report",
       "location_info": {
         "location": "POINT(-124.8 61.55)",
         "country": "Canada",
-        "state_or_province": "Northwest Territories"
+        "state_or_province": "Northwest Territories",
+        "crs": "WGS84"
       },
   "MineralInventory": [
     {
@@ -23,9 +25,9 @@
       },
       "contained_metal": 827.88,
       "reference": {
-        "id": 0,
+        "id": 1,
         "document": {
-          "id": "doc_id_0",
+          "doi": "https://w3id.org/usgs/z/4530692/SDZT38KU",
           "title": "Prairie Creek Property Prefeasibility Update NI 43-101 Technical Report",
           "uri": "",
           "month": 2,

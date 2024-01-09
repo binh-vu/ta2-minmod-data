@@ -1,12 +1,13 @@
 {
   "MineralSite": [
     {
-      "source_id": "https://w3id.org/usgs/z/4530692/R49Z8F3P",
-      "record_id": 1,
+      "id": 0,
       "name": "Competent person\u2019s report for the Reoc\u00edn Mine and San Juan de Nieva zinc assets held by Asturiana de Zinc S.L.",
       "location_info": {
         "country": "Spain",
-        "state_or_province": "Cantabria"
+        "state_or_province": "Cantabria",
+        "location_source_record_id": "Reocin Zn 3-2002.pdf",
+        "location_source": "Competent person\u2019s report"
       },
       "MineralInventory": [
         {
@@ -52,9 +53,9 @@
           },
           "contained_metal": 106862.2,
           "reference": {
-            "id": 1,
+            "id": 0,
             "document": {
-              "doi": "https://w3id.org/usgs/z/4530692/R49Z8F3P",
+              "id": "doc_id_0",
               "title": "competent person\u2019s report for the reoc\u00edn mine and san juan de nieva zinc assets held by asturiana de zinc s.l.",
               "uri": "",
               "month": 3,
@@ -80,6 +81,7 @@
           "id": "https://minmod.isi.edu/resource/Q375"
         }
       ]
+
     }
   ]
 }
