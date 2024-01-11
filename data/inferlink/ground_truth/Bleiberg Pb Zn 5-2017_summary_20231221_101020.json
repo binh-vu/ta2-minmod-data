@@ -5,6 +5,7 @@
       "name": "TECHNICAL REPORT BLEIBERG PROPERTY",
       "location_info": {
         "location": "POINT(394000, 5164500)",
+        "crs": "WGS84",
         "country": "Austria",
         "state_or_province": "Carinthia"
       },

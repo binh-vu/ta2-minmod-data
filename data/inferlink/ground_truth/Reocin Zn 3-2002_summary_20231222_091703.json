@@ -6,8 +6,7 @@
       "location_info": {
         "country": "Spain",
         "state_or_province": "Cantabria",
-        "location_source_record_id": "Reocin Zn 3-2002.pdf",
-        "location_source": "Competent person\u2019s report"
+        "crs": "WGS84"
       },
       "MineralInventory": [
         {
