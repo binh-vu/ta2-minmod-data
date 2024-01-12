@@ -14,7 +14,7 @@
         {
           "id": 1,
           "commodity": "zinc",
-          "category": "",
+          "category": "https://minmod.isi.edu/resource/inferred",
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 3464892
@@ -24,8 +24,8 @@
             "grade_value": 3.62
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 2.0
+            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent %",
+            "grade_value": 4.48
           },
           "contained_metal": 125366.69,
           "reference": {
@@ -47,7 +47,7 @@
             },
             "page_info": [
               {
-                "page": "page number",
+                "page": 59,
                 "bounding_box": {
                   "x_min": "",
                   "x_max": "",
@@ -62,7 +62,7 @@
         {
           "id": 2,
           "commodity": "zinc",
-          "category": "",
+          "category": "https://minmod.isi.edu/resource/inferred",
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 3140877
@@ -72,8 +72,8 @@
             "grade_value": 3.81
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 2.5
+            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_value": 4.71
           },
           "contained_metal": 119586.91,
           "reference": {
@@ -95,7 +95,7 @@
             },
             "page_info": [
               {
-                "page": "page number",
+                "page": 59,
                 "bounding_box": {
                   "x_min": "",
                   "x_max": "",
@@ -110,7 +110,7 @@
         {
           "id": 3,
           "commodity": "zinc",
-          "category": "",
+          "category": "https://minmod.isi.edu/resource/inferred",
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 2668343
@@ -120,8 +120,8 @@
             "grade_value": 4.1
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 3.0
+            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_value": 5.05
           },
           "contained_metal": 109402.46,
           "reference": {
@@ -143,7 +143,7 @@
             },
             "page_info": [
               {
-                "page": "page number",
+                "page": 59,
                 "bounding_box": {
                   "x_min": "",
                   "x_max": "",
@@ -158,7 +158,7 @@
         {
           "id": 4,
           "commodity": "zinc",
-          "category": "",
+          "category": "https://minmod.isi.edu/resource/inferred",
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 2306066
@@ -168,8 +168,8 @@
             "grade_value": 4.37
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 3.25
+            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_value": 5.36
           },
           "contained_metal": 100775.38,
           "reference": {
@@ -191,7 +191,7 @@
             },
             "page_info": [
               {
-                "page": "page number",
+                "page": 59,
                 "bounding_box": {
                   "x_min": "",
                   "x_max": "",
@@ -206,7 +206,7 @@
         {
           "id": 5,
           "commodity": "zinc",
-          "category": "",
+          "category": "https://minmod.isi.edu/resource/inferred",
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 2058322
@@ -216,8 +216,8 @@
             "grade_value": 4.58
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 3.5
+            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_value": 5.6
           },
           "contained_metal": 94251.69,
           "reference": {
@@ -239,7 +239,7 @@
             },
             "page_info": [
               {
-                "page": "page number",
+                "page": 59,
                 "bounding_box": {
                   "x_min": "",
                   "x_max": "",
@@ -254,7 +254,7 @@
         {
           "id": 6,
           "commodity": "zinc",
-          "category": "",
+          "category": "https://minmod.isi.edu/resource/inferred",
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 1878871
@@ -264,8 +264,8 @@
             "grade_value": 4.75
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 3.75
+            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_value": 5.79
           },
           "contained_metal": 89266.67,
           "reference": {
@@ -287,7 +287,7 @@
             },
             "page_info": [
               {
-                "page": "page number",
+                "page": 59,
                 "bounding_box": {
                   "x_min": "",
                   "x_max": "",
