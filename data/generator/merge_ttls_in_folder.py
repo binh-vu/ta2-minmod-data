@@ -2,8 +2,9 @@ from rdflib import Graph
 import sys
 import os
 
+from typing import List
 
-def combine_graphs(infiles: list[str], outfile: str):
+def combine_graphs(infiles: List[str], outfile: str):
     g = Graph()
     for infile in infiles:
         g.parse(infile, format="turtle")
