@@ -159,16 +159,6 @@ schema = {
                             "required": ["reference"]
 
                         }
-                    },
-                    "same_as" : {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "source_id": {"type": "string"},
-                                "record_id": {"type": "number"}
-                            }
-                        }
                     }
                 },
                 "required": ["name"]
