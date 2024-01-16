@@ -9,7 +9,6 @@ print(filename)
 try:
     with open(filename, 'r') as file:
         data_graph = file.read()
-        # print(f"Contents of {filename}:\n{data_graph}")
 except FileNotFoundError:
     print(f"Error: File '{filename}' not found.")
 except Exception as e:
@@ -110,7 +109,7 @@ sh:class mndr:Document;
 	sh:property [   
 		sh:path mndr:uri ;
 		sh:minCount 0 ;
-		sh:datatype xsd:anyURI ;
+		sh:nodeKind sh:IRI ;
 	] ;
 	sh:property [   
 		sh:path mndr:id ;
@@ -190,12 +189,12 @@ sh:class mndr:MineralInventory;
 	sh:property [   
 		sh:path mndr:category ;
 		sh:minCount 0 ;
-		sh:datatype xsd:anyURI ;
+		sh:nodeKind sh:IRI ;
 	] ;
 	sh:property [   
 		sh:path mndr:commodity ;
 		sh:minCount 0 ;
-		sh:datatype xsd:anyURI ;
+		sh:nodeKind sh:IRI ;
 	] ;
 	sh:property [   
 		sh:path mndr:date ;
@@ -205,7 +204,7 @@ sh:class mndr:MineralInventory;
 	sh:property [   
 		sh:path mndr:id ;
 		sh:minCount 0 ;
-		sh:datatype xsd:integer ;
+		sh:datatype xsd:string ;
 	];
 	sh:property [   
 		sh:path mndr:contained_metal ;
@@ -251,7 +250,7 @@ sh:class mndr:MineralSite;
 	sh:property [   
 		sh:path mndr:id ;
 		sh:minCount 0 ;
-		sh:datatype xsd:integer ;
+		sh:datatype xsd:string ;
 	];
 	sh:property [   
 		sh:path mndr:record_id ;
@@ -373,7 +372,7 @@ sh:targetClass mndr:Ore;
 sh:class  mndr:Ore ;
        sh:property [
                 		sh:path mndr:ore_unit ;
-                		sh:datatype xsd:anyURI ;
+                		sh:nodeKind sh:IRI ;
                 	] ;
         sh:property [
                 		sh:path mndr:ore_value ;
@@ -385,7 +384,7 @@ sh:targetClass mndr:Grade;
 sh:class  mndr:Grade ;
        sh:property [
                 		sh:path mndr:grade_unit ;
-                		sh:datatype xsd:anyURI ;
+                		sh:nodeKind sh:IRI ; ;
                 	] ;
         sh:property [
                 		sh:path mndr:grade_value ;
@@ -397,7 +396,7 @@ mndr:DepositType  a          sh:NodeShape;
 sh:targetClass mndr:DepositType;
        sh:property [
                 		sh:path mndr:id ;
-                		sh:datatype xsd:anyURI ;
+                		sh:nodeKind sh:IRI ;
                 		sh:minCount 0 ;  
                         sh:maxCount 1 ;
                 	] .
@@ -526,40 +525,7 @@ sh:targetClass mndr:PageInfo;
                 		sh:class mndr:BoundingBox ;
                 	].
 
-#mndr:Reference  a    sh:NodeShape;
-#sh:targetClass mndr:Reference;
- #       sh:property  mndr:page_info.
 
-mndr:Q11 a mndr:Reference ;
-    mndr:page_info mndr:Q13 .
-
-mndr:Q13 a mndr:PageInfo ;
-    mndr:page 33 .
-
-
-
-# Define a shape for instances of the class ex:Person
-ex:PersonShape
-  a sh:NodeShape ;
-  sh:property [
-    sh:path ex:hasChild ;  # Property path for the hasChild property
-    sh:class ex:Person ;   # Expected class for the hasChild property
-    sh:severity sh:Violation ;
-  ] .
-
-# Data with instances of classes
-ex:John
-  a ex:Person ;
-  ex:hasChild ex:Fido .  # Mistakenly associating hasChild property with an instance of class ex:Animal
-
-ex:Fido
-  a ex:Animal .
-
-
-# mndr:page
-        # a         sh:PropertyShape ;
-        # sh:datatype  xsd:integer ;
-        # sh:path   mndr:page .
 
 mndr:MineralSystem-https___minmod.isi.edu_resource_trap
         a         sh:PropertyShape ;
@@ -711,14 +677,10 @@ mndr:MineralSystem-https___minmod.isi.edu_resource_trigger
         sh:path   mndr:trigger .
 
 """
-
-# print(data_graph)
-
 shapes_g = Graph().parse(data=shapes_graph, format="turtle")
 
 result = validate(data_graph, shacl_graph=shapes_g, inference='rdfs', serialize_report_graph=True)
 
-# Check the results
 conforms, a, b = result
 
 if not conforms:
