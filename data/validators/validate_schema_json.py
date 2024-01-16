@@ -21,7 +21,6 @@ def get_uri(url, data):
 
 
 filename = sys.argv[1]
-
 new_json_folder = sys.argv[2]
 file_name_without_path = os.path.basename(filename)
 
