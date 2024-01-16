@@ -5,6 +5,7 @@
       "name": "Mehdiabad Zinc Project \u2013 Information Memorandum",
       "location_info": {
         "country": "Iran",
+        "crs": "WGS84",
         "state_or_province": "Yazd Province",
         "location_source": "Information Memorandum March 2005"
       },

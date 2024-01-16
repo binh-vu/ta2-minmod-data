@@ -4,10 +4,9 @@
     "name": "BONGARÁ ZINC PROJECT",
     "location_info": {
       "location": "POINT(171425 9367875)",
+      "crs": "WGS84",
       "country": "Peru",
-      "state_or_province": "Amazonas",
-      "location_source_record_id": "Bongara\u0301 Zn 3-2019.pdf",
-      "location_source": "Bongar\u00e1 Zn 3-2019"
+      "state_or_province": "Amazonas"
     }
   },
   "MineralInventory": [
