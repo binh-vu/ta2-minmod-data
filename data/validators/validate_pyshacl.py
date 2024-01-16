@@ -223,11 +223,6 @@ sh:class mndr:MineralSite;
 		sh:class mndr:DepositType ;
 	];
 	sh:property [   
-		sh:path mndr:same_as ;
-		sh:minCount 0 ;
-		sh:class mndr:SameAs ;
-	];
-	sh:property [   
 		sh:path mndr:location_info ;
 		sh:minCount 0 ;
 		sh:class mndr:LocationInfo ;
@@ -400,22 +395,6 @@ sh:targetClass mndr:DepositType;
                 		sh:minCount 0 ;  
                         sh:maxCount 1 ;
                 	] .
-
-mndr:SameAs  a          sh:NodeShape;
-sh:targetClass mndr:SameAs;
-sh:class mndr:SameAs;
-       sh:property [
-                		sh:path mndr:source_id ;
-                		sh:datatype xsd:string ;
-                		sh:minCount 0 ;  
-                        sh:maxCount 1 ;
-                	];
-                	 sh:property [
-                		sh:path mndr:record_id ;
-                		sh:datatype xsd:integer ;
-                		sh:minCount 0 ;  
-                        sh:maxCount 1 ;
-                	].
                 	
 mndr:LocationInfo  a          sh:NodeShape;
 sh:targetClass mndr:LocationInfo;

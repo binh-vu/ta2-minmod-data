@@ -156,17 +156,8 @@ schema = {
                                     }
                                 }
                             },
-                            "required": ["id"]
-                        }
-                    },
-                    "same_as" : {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "source_id": {"type": "string"},
-                                "record_id": {"type": "number"}
-                            }
+                            "required": ["reference"]
+
                         }
                     }
                 },
@@ -194,7 +185,7 @@ except jsonschema.ValidationError as e:
 ms_list = json_data['MineralSite']
 
 
-base_url = 'http://127.0.0.1:5005/'
+base_url = 'http://minmod.isi.edu/'
 mndr_url = 'https://minmod.isi.edu/resource/'
 
 ms_url = base_url + 'mineral_site'
