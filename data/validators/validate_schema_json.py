@@ -1,9 +1,30 @@
 import json
 import jsonschema
 import sys
+import requests
+import uuid
+import os
+
+
+def get_uri(url, data):
+    json_data_to_send = json.dumps(data)
+    response = requests.post(url, data=json_data_to_send, headers=headers)
+    uri = ''
+    if response.status_code == 200:
+        uri_json = json.loads(response.text)
+        uri = uri_json['result']
+    else:
+        print(f"Request failed with status code {response.status_code}")
+        uri = uuid.uuid1()
+
+    return uri
+
 
 filename = sys.argv[1]
-print(filename)
+
+new_json_folder = sys.argv[2]
+file_name_without_path = os.path.basename(filename)
+
 
 try:
     with open(filename, 'r') as file:
@@ -151,7 +172,8 @@ schema = {
                     }
                 },
                 "required": ["name"]
-            }
+            },
+            "required": ["source_id", "record_id"]
         }
     }
 }
@@ -167,4 +189,60 @@ try:
 except jsonschema.ValidationError as e:
     print(f"Validation failed: {e}")
     raise  # Raise an exception to indicate failure
+
+# print(type(json_data))
+
+ms_list = json_data['MineralSite']
+
+
+base_url = 'http://127.0.0.1:5005/'
+mndr_url = 'https://minmod.isi.edu/resource/'
+
+ms_url = base_url + 'mineral_site'
+doc_url = base_url + 'document'
+mi_url = base_url + 'mineral_inventory'
+
+headers = {"Content-Type": "application/json"}
+
+for ms in ms_list:
+    mi_data = {
+        "site": ms
+    }
+
+    ms['id'] = mndr_url + get_uri(ms_url, mi_data)
+    if "MineralInventory" in ms:
+
+        mi_list = ms['MineralInventory']
+
+        counter = 0
+
+        for mi in mi_list:
+            mi_data = {
+                "site": ms,
+                "id": counter
+            }
+            mi['id'] = mndr_url + get_uri(mi_url, mi_data)
+            counter += 1
+
+        if "reference" in mi:
+            reference = mi['reference']
+            if "document" in reference:
+                document = reference['document']
+
+                doc_data = {
+                    "document": document
+                }
+
+                document['id'] = mndr_url + get_uri(doc_url, doc_data)
+
+
+file_to_write = new_json_folder + '/' + file_name_without_path
+file_exists = os.path.exists(file_to_write)
+
+if not file_exists:
+    os.makedirs(os.path.dirname(file_to_write), exist_ok=True)
+
+with open(file_to_write, 'w') as file:
+    file.write(json.dumps(json_data))
+
 
