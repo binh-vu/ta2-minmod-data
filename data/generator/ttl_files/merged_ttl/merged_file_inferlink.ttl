@@ -353,4 +353,3 @@ mndr:https-w3id-org-usgs-z-4530692-sdzt38kuprairie-creek-property-prefeasibility
 [] a mndr:GeologyInfo .
 
 [] a mndr:GeologyInfo .
-

@@ -27146,4 +27146,3 @@ _:n415930caa96d4ca1968a14ade5c88024b998 a mndr:Ore ;
 _:n415930caa96d4ca1968a14ade5c88024b999 a mndr:Ore ;
     mndr:ore_unit mndr:Q202 ;
     mndr:ore_value 10.10 .
-
