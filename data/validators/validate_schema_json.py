@@ -21,7 +21,6 @@ def get_uri(url, data):
 
 
 filename = sys.argv[1]
-
 new_json_folder = sys.argv[2]
 file_name_without_path = os.path.basename(filename)
 
@@ -224,16 +223,16 @@ for ms in ms_list:
             mi['id'] = mndr_url + get_uri(mi_url, mi_data)
             counter += 1
 
-        if "reference" in mi:
-            reference = mi['reference']
-            if "document" in reference:
-                document = reference['document']
+            if "reference" in mi:
+                reference = mi['reference']
+                if "document" in reference:
+                    document = reference['document']
 
-                doc_data = {
-                    "document": document
-                }
+                    doc_data = {
+                        "document": document
+                    }
 
-                document['id'] = mndr_url + get_uri(doc_url, doc_data)
+                    document['id'] = mndr_url + get_uri(doc_url, doc_data)
 
 
 file_to_write = new_json_folder + '/' + file_name_without_path
