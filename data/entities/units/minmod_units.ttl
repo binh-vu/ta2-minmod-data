@@ -11,10 +11,22 @@
 
 
 <https://minmod.isi.edu/resource/Q200> a mndr:Unit;
-	mndr:unit_name "tonnes";
+	rdfs:label "tonnes";
+	rdfs:label "tonnes";
 	mndr:id <https://minmod.isi.edu/resource/Q200>;
 	.
 <https://minmod.isi.edu/resource/Q201> a mndr:Unit;
-	mndr:unit_name "percent";
+	rdfs:label "percent";
+	rdfs:label "percent";
 	mndr:id <https://minmod.isi.edu/resource/Q201>;
+	.
+<https://minmod.isi.edu/resource/Q202> a mndr:Unit;
+	rdfs:label "million tonnes";
+	rdfs:label "million tonnes";
+	mndr:id <https://minmod.isi.edu/resource/Q202>;
+	.
+<https://minmod.isi.edu/resource/Q203> a mndr:Unit;
+	rdfs:label "gram per tonne";
+	rdfs:label "gram per tonne";
+	mndr:id <https://minmod.isi.edu/resource/Q203>;
 	.
