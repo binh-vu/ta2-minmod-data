@@ -92,7 +92,7 @@ preprocessing:
             v['record_id'] = -1
         print(value)
         return value
-      value = [{}]
+      value = [{'source_id' : -1, 'record_id' : -1}]
       print(value)
       return value
   - type: pmap
@@ -106,10 +106,10 @@ preprocessing:
         print('Len is not 0 .......')
         for v in value:
           if 'id' not in v:
-            v['id'] = -1
+            v['id'] = ''
         print(value)
         return value
-      value = [{}]
+      value = [{'id' : -1}]
       print(value)
       return value
   - type: pmap
@@ -312,6 +312,8 @@ attributes:
   mineral_inven:
     path: [ "MineralSite", .. , "MineralInventory" ]
     missing_values: [ -1 ]
+  deposit_type_main:
+    path: [ "MineralSite", .. , "deposit_type"]
   deposit_type:
     path: [ "MineralSite", .. , "deposit_type", .., "id" ]
     missing_values: [ -1 ]

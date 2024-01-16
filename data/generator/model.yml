@@ -81,7 +81,7 @@ preprocessing:
           if 'record_id' not in v:
             v['record_id'] = -1
         return value
-      value = [{}]
+      value = [{'source_id' : -1, 'record_id' : -1}]
       return value
   - type: pmap
     path: [ "MineralSite", .. , "deposit_type" ]
@@ -92,7 +92,7 @@ preprocessing:
           if 'id' not in v:
             v['id'] = -1
         return value
-      value = [{}]
+      value = [{'id' : -1}]
       return value
   - type: pmap
     path: [ "MineralSite", .. , "location_info" ]
