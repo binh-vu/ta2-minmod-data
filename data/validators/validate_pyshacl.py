@@ -99,7 +99,7 @@ sh:class mndr:Document;
 	sh:property [   
 		sh:path mndr:authors ;
 		sh:minCount 0 ;
-		sh:datatype rdf:List ;
+		sh:datatype xsd:string ;
 	];
 	sh:property [   
 		sh:path mndr:title ;
