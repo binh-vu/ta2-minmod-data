@@ -219,6 +219,24 @@ preprocessing:
         value['authors'] = -1
       return value
   - type: pmap
+    path: [ "MineralSite", .. , "MineralInventory", .. , "reference", "document", "authors" ]
+    change_structure: false
+    code: |
+      print('------aaaaaaaaaa-------')
+      print(value)
+      print(type(value))
+      if value == -1:
+        return value
+      value = value.copy()
+      if len(value) == 0:
+        value = ''
+      else:
+        value = ",".join(value)
+      
+      print(value)
+      
+      return value
+  - type: pmap
     path: [ "MineralSite", .. , "MineralInventory", .. , "reference", "page_info" ]
     change_structure: false
     code: |
