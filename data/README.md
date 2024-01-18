@@ -34,7 +34,12 @@ The domain and ranges of the json keys are highlighted as follows
   * `name`: string representing observed name of the mineral site
   * `mineral_inventory`
     * `commodity`: URI of commodity in minmod, e.g.: _https://minmod.isi.edu/resource/Q589_. List of possible commodities and their minmod ids are defined in [commodities](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/commodities/minmod_commodities.csv)
-    * `category`: enum, one of {`INFERRED`, `INDICATED`, `MEASURED`, `PROBABLE`, `PROVEN`, `ORIGINAL_RESOURCE, EXTRACTED, CUMULATIVE_EXTRACTED`}
+    * `category`: enum, one of:
+      * `INFERRED` (Inferred Mineral **Resource**): Estimated based on limited geological evidence and sampling (lowest confidence level)
+      * `INDICATED` (Indicated Mineral **Resource**): Estimated based on more comprehensive geological evidence and sampling (higher level of confidence)
+      * `MEASURED` (Measured Mineral **Resource**): Estimated based on detailed and reliable data (highest confidence category among Mineral Resources)
+      * `PROBABLE` (Probable Mineral **Reserve**): part of Indicated (and sometimes Measured) Mineral Resources that are economically mineable (lower confidence level than `PROVEN` but is considered economically viable under existing economic conditions)
+      * `PROVEN` (Proven Mineral **Reserve**): highest confidence category among **Reserves** (economically mineable and is part of Measured Mineral Resources, with a high degree of confidence in the modifying factors affecting economic viability)
     * `ore`
       * `ore_unit`: URI of ore unit in minmod, e.g.: _https://minmod.isi.edu/resource/Q200_. List of possible unit names and their minmod ids are defined in [unit names](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/units/minmod_units.csv)
       * `ore_value`: value of ore in units, decimal value
