@@ -5,10 +5,8 @@
     "record_id": 1,
     "name": "Mina Grand\u00e9 Sur",
     "location_info": {
-      "location": "POINT(171425 9367875)",
       "country": "Peru",
-      "state_or_province": "Amazonas",
-      "crs": "WGS84"
+      "state_or_province": "Amazonas"
     },
   "MineralInventory": [
     {
