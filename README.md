@@ -4,7 +4,7 @@ This repository contains the datasets used to create the mineral site knowledge 
 
 ## Repository Structure
 
-- `/data`: This directory contains all the raw data used to build the MinMod knowledge graph.
+- `/data` (see designated [README](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/tree/main/data#readme)): This directory contains all the raw data used to build the MinMod knowledge graph.
 - `/deployment`: This directory holds the final `.ttl` file that is deployed on our online SPARQL endpoint.
 - `/sandbox`: This directory holds the demo presented during the 3-month hackathon.
 
