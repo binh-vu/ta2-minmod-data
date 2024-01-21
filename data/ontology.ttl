@@ -175,6 +175,26 @@ mndr:CumulativeExtracted
      a mndr:ResourceReserveCategory ;
     rdfs:label "Cumulative Extracted"@en .
 
+mndr:MeasuredIndicated
+     a mndr:ResourceReserveCategory ;
+    rdfs:label "Measured + Indicated"@en .
+
+mndr:ProvenProbable
+     a mndr:ResourceReserveCategory ;
+    rdfs:label "Proven + Probable"@en .
+
+mndr:TotalProvenProbable
+     a mndr:ResourceReserveCategory ;
+    rdfs:label "total proven & probable"@en .
+
+mndr:TotalIndicated
+     a mndr:ResourceReserveCategory ;
+    rdfs:label "total indicated"@en .
+
+mndr:TotalInferred
+     a mndr:ResourceReserveCategory ;
+    rdfs:label "total inferred"@en .
+
 mndr:DepositType
     a rdfs:Class ;
     owl:sameAs gkbi:Q26097;
