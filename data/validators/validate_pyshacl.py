@@ -109,7 +109,7 @@ sh:class mndr:Document;
 	sh:property [   
 		sh:path mndr:uri ;
 		sh:minCount 0 ;
-		sh:nodeKind sh:IRI ;
+		sh:datatype xsd:string ;
 	] ;
 	sh:property [   
 		sh:path mndr:id ;
