@@ -7,9 +7,8 @@ def mineral_site_uri(data):
         print(type(data))
         json_param = data.get('site')
         if json_param is None:
-            return 'Please provide both parameters: site'
-        else:
             raise
+
 
         processed_data = process_mineral_site(json_param)
         return ({"result": processed_data})
@@ -23,8 +22,6 @@ def document_uri(data):
         print(type(data))
         json_param = data.get('document')
         if json_param is None:
-            return 'Please provide both parameters: site'
-        else:
             raise
 
         processed_data = process_document(json_param)
@@ -41,8 +38,6 @@ def mineral_inventory_uri(data):
         param2 = data.get('id')
         # Check if both parameters are provided
         if param1 is None or param2 is None:
-            return 'Please provide both parameters: site and id'
-        else:
             raise
 
         processed_data = process_mineral_inventory(param1, param2)
