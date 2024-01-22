@@ -5,7 +5,7 @@
       "record_id": 1,
       "name": "NI 43-101 Technical Report on the Hakkari Zinc Project Turkey (Revised)",
       "location_info": {
-        "location": "MULTIPOINT([(7.177747°S, 77.895783°W),(7.177747°S, 77.885855°W),(7.171991°S, 77.885855°W),(7.176310°S, 77.891136°W)])",
+        "location": "MULTIPOINT(7.177747°S 77.895783°W, 7.177747°S 77.885855°W, 7.171991°S 77.885855°W, 7.176310°S 77.891136°W)",
         "crs": "WGS84",
         "country": "Turkey",
         "state_or_province": "Hakkari and Sirnak Provinces"
