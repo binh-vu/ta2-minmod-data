@@ -4,12 +4,16 @@ import os
 
 from typing import List
 
-def combine_graphs(infiles: List[str], outfile: str):
+def combine_graphs(infiles: List[str], outfile: str, base_uri: str = None):
     g = Graph()
     for infile in infiles:
         g.parse(infile, format="turtle")
 
-    g.serialize(outfile, format="turtle")
+    if base_uri is not None:
+        g.serialize(outfile, format="turtle", base=base_uri)
+    else:
+        g.serialize(outfile, format="turtle")
+
     return g
 
 
@@ -35,5 +39,5 @@ with open(merged_json_file, "w") as file:
 print(files_array)
 print(merged_json_file)
 
-combine_graphs(files_array, merged_json_file)
+combine_graphs(files_array, merged_json_file,'https://minmod.isi.edu/resource/')
 

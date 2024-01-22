@@ -1,0 +1,58 @@
+name: Run Python Script on Pull Request
+
+on:
+  pull_request:
+    branches:
+      - main  # change this to your main branch
+
+jobs:
+  run_python_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8  # change this to your desired Python version
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # change this if you have dependencies
+
+      - name: Install jitterbit
+        uses: jitterbit/get-changed-files@v1
+        with:
+          format: 'space-delimited'
+
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Do something with this ${changed_file}."
+            python data/validators/validate_schema_github_actions.py ${changed_file}
+          done
+
+      - name: List changed files
+        id: list_changes
+        run: echo "::set-output name=changes::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})"
+
+      - name: List changed files
+        run: |
+          # Get the list of changed files
+          changed_files=$(git diff --name-only)
+          
+          # Display the list of changed files
+          echo "Changed Files:"
+          echo "$changed_files"
+
+      - name: Run Python script and capture output
+        run: |
+          output=$(python data/validators/validate_schema_github_actions.py ${{ steps.list_changes.outputs.changes }})
+          echo "$output" > output.txt  # Optionally, save the output to a file
+
+      - name: Display Python script output
+        run: cat output.txt

@@ -44,13 +44,15 @@ schema = {
                     "id" : {"type" : "number"},
                     "name" : {"type" : "string"},
                     "source_id" : {"type" : "string"},
-                    "record_id" : {"type" : "number"},
+                    "record_id" : {"type": ["string", "number"]},
                     "location_info": {
                         "type": "object",
                         "properties": {
                             "location": {"type": "string"},
                             "country": {"type": "string"},
-                            "state_or_province": {"type": "string"},
+                            "state_or_province": {
+                                "anyOf": [{"type": "string"},{"type": "null"}]
+                                },
                             "location_source_record_id": {"type": "string"},
                             "crs": {"type": "string"},
                             "location_source": {"type": "string"}
@@ -185,7 +187,7 @@ except jsonschema.ValidationError as e:
 ms_list = json_data['MineralSite']
 
 
-base_url = 'http://minmod.isi.edu/'
+base_url = 'http://127.0.0.1:5007/'
 mndr_url = 'https://minmod.isi.edu/resource/'
 
 ms_url = base_url + 'mineral_site'
