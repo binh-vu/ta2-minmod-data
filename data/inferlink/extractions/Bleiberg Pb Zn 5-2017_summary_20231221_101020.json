@@ -10,7 +10,7 @@
         "state_or_province": "Carinthia",
         "crs": "WGS84"
       },
-
+ 
   "MineralInventory": [
     {
       "id": 0,
@@ -18,7 +18,7 @@
       "category": "https://minmod.isi.edu/resource/Total",
       "ore": {
         "ore_unit": "https://minmod.isi.edu/resource/Q200",
-        "ore_value": 12247399
+        "ore_value": 12247399 
       },
       "grade": {
         "grade_unit": "https://minmod.isi.edu/resource/Q201",
