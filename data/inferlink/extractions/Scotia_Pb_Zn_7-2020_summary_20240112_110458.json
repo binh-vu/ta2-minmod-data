@@ -24,7 +24,7 @@
             "grade_value": 2.46
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/zneq %",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 1.5
           },
           "contained_metal": 82962,
@@ -71,7 +71,7 @@
             "grade_value": 1.88
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/zneq %",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 1.5
           },
           "contained_metal": 193542,
@@ -118,7 +118,7 @@
             "grade_value": 2.03
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/zneq %",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 1.5
           },
           "contained_metal": 277298,

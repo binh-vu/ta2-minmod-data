@@ -24,7 +24,7 @@
             "grade_value": 3.62
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent %",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 4.48
           },
           "contained_metal": 125366.69,
@@ -70,7 +70,7 @@
             "grade_value": 3.81
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 4.71
           },
           "contained_metal": 119586.91,
@@ -116,7 +116,7 @@
             "grade_value": 4.1
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 5.05
           },
           "contained_metal": 109402.46,
@@ -162,7 +162,7 @@
             "grade_value": 4.37
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 5.36
           },
           "contained_metal": 100775.38,
@@ -208,7 +208,7 @@
             "grade_value": 4.58
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 5.6
           },
           "contained_metal": 94251.69,
@@ -254,7 +254,7 @@
             "grade_value": 4.75
           },
           "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Zn Equivalent",
+            "grade_unit": "https://minmod.isi.edu/resource/Q207",
             "grade_value": 5.79
           },
           "contained_metal": 89266.67,
