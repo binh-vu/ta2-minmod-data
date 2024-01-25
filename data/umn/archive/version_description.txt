@@ -1,1 +1,1 @@
-Current: ver0 (MVT Zinc)
+Current: ver0 (MVT Zinc + MineralSite Schema)
