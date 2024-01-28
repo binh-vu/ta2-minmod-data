@@ -216,6 +216,30 @@ for file_path in changed_files:
                 counter = 0
 
                 for mi in mi_list:
+
+
+                    if "category" in mi:
+                        for dp in mi['category']:
+                            is_valid_uri(dp)
+
+                    if "commodity" in mi:
+                        is_valid_uri(mi['commodity'])
+
+                    if "ore" in mi:
+                        if "ore_unit" in mi['ore']:
+                            ore = mi['ore']
+                            is_valid_uri(ore['ore_unit'])
+
+                    if "grade" in mi:
+                        if "grade_unit" in mi['grade']:
+                            grade = mi['grade']
+                            is_valid_uri(grade['grade_unit'])
+
+                    if "cutoff_grade" in mi:
+                        if "grade_unit" in mi['cutoff_grade']:
+                            cutoff_grade = mi['cutoff_grade']
+                            is_valid_uri(cutoff_grade['grade_unit'])
+
                     mi_data = {
                         "site": ms,
                         "id": counter

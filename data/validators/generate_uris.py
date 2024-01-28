@@ -102,9 +102,12 @@ def process_mineral_inventory(ms, id):
         document = reference['document']
         uri_doc = process_document(document)
         commodity = process_mi['commodity']
-        category = process_mi['category']
+        category = []
+        for c in process_mi['category']:
+            category.append(c)
+        category_str = ','.join(category)
 
-        merged_string += (uri_ms + '-' + uri_doc + '-' + slugify(commodity) + '-' + slugify(category))
+        merged_string += (uri_ms + '-' + uri_doc + '-' + slugify(commodity) + '-' + slugify(category_str))
 
 
     if merged_string == '':
