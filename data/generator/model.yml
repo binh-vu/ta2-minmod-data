@@ -208,6 +208,19 @@ preprocessing:
       return value
 
   - type: pmap
+    path: [ "MineralSite", .. , "MineralInventory", .. , "category"]
+    change_structure: false
+    code: |
+      if value == -1:
+        return value
+      value = value.copy()
+      if len(value) == 0:
+        value = ''
+      else:
+        value = ",".join(value)
+      return value
+
+  - type: pmap
     path: [ "MineralSite", .. , "MineralInventory", .. , "reference", "page_info" ]
     change_structure: false
     code: |
@@ -752,7 +765,6 @@ semantic_model:
         - xsd:date
       - - mndr:category
         - category
-        - xsd:anyURI
       - - mndr:zone
         - zone
       - - mndr:commodity

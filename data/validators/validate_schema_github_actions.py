@@ -88,7 +88,10 @@ def process_files(filename):
                                 "type": "object",
                                 "properties": {
                                     "id": {"type": "string"},
-                                    "category": {"type": "string"},
+                                    "category": {
+                                        "type": "array",
+                                        "items": {"type": "string"}
+                                    },
                                     "contained_metal": {"type": "number"},
                                     "reference": {
                                         "type": "object",

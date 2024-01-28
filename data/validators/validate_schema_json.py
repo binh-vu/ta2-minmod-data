@@ -85,7 +85,10 @@ schema = {
                             "type": "object",
                             "properties": {
                                 "id": {"type": "number"},
-                                "category": {"type": "string"},
+                                "category": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
                                 "contained_metal": {"type": "number"},
                                 "reference": {
                                     "type": "object",
