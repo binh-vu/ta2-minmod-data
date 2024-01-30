@@ -9,7 +9,7 @@ import base64
 import subprocess
 import validate_pyshacl
 
-def get_sha(owner, repo, path, branch):
+def get_sha(repo, path, branch):
 
     url = f"https://api.github.com/repos/{repo}/contents/{path}?ref={branch}"
     print(url)
@@ -64,7 +64,6 @@ def run_drepr_on_file(datasource):
         result = subprocess.run(command, shell=True, check=True, text=True, capture_output=True)
         output_lines = result.stdout.splitlines()[2:]  # Skip the first two lines
         return '\n'.join(output_lines)
-        print("Command output (skipping first two lines) written to 'output_file.txt'")
     except subprocess.CalledProcessError as e:
         print("Error executing command:", e)
         print("Command output (if any):", e.output)
@@ -87,7 +86,9 @@ def create_drepr_update_github(file_path, filename):
     branch = os.environ["GITHUB_HEAD_REF"]
     url = f'https://api.github.com/repos/{os.environ["GITHUB_REPOSITORY"]}/contents/{generated_ttl_path}'
     print(url)
-    existing_sha = get_sha('namrata1012', repo, file_path, branch)
+
+    # TODO: Implement getting existing files, Does not currently work
+    # existing_sha = get_sha(repo, file_path, branch)
 
     validated_drepr = validate_pyshacl.validate_ttl(file_content)
 
