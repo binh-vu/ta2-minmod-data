@@ -11,9 +11,7 @@
       "MineralInventory": [
         {
           "commodity": "https://minmod.isi.edu/resource/Q589",
-          "category": [
-            "https://minmod.isi.edu/resource/proven"
-          ],
+          "category": ["https://minmod.isi.edu/resource/proven"],
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 4921000
@@ -56,9 +54,7 @@
         },
         {
           "commodity": "https://minmod.isi.edu/resource/Q589",
-          "category": [
-            "https://minmod.isi.edu/resource/probable"
-          ],
+          "category": ["https://minmod.isi.edu/resource/probable"],
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 7464000
