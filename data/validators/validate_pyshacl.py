@@ -99,7 +99,7 @@ sh:class mndr:Document;
 	sh:property [   
 		sh:path mndr:authors ;
 		sh:minCount 0 ;
-		sh:datatype rdf:List ;
+		sh:datatype xsd:string ;
 	];
 	sh:property [   
 		sh:path mndr:title ;
@@ -109,7 +109,7 @@ sh:class mndr:Document;
 	sh:property [   
 		sh:path mndr:uri ;
 		sh:minCount 0 ;
-		sh:nodeKind sh:IRI ;
+		sh:datatype xsd:string ;
 	] ;
 	sh:property [   
 		sh:path mndr:id ;
@@ -221,11 +221,6 @@ sh:class mndr:MineralSite;
 		sh:path mndr:deposit_type ;
 		sh:minCount 0 ;
 		sh:class mndr:DepositType ;
-	];
-	sh:property [   
-		sh:path mndr:same_as ;
-		sh:minCount 0 ;
-		sh:class mndr:SameAs ;
 	];
 	sh:property [   
 		sh:path mndr:location_info ;
@@ -400,22 +395,6 @@ sh:targetClass mndr:DepositType;
                 		sh:minCount 0 ;  
                         sh:maxCount 1 ;
                 	] .
-
-mndr:SameAs  a          sh:NodeShape;
-sh:targetClass mndr:SameAs;
-sh:class mndr:SameAs;
-       sh:property [
-                		sh:path mndr:source_id ;
-                		sh:datatype xsd:string ;
-                		sh:minCount 0 ;  
-                        sh:maxCount 1 ;
-                	];
-                	 sh:property [
-                		sh:path mndr:record_id ;
-                		sh:datatype xsd:integer ;
-                		sh:minCount 0 ;  
-                        sh:maxCount 1 ;
-                	].
                 	
 mndr:LocationInfo  a          sh:NodeShape;
 sh:targetClass mndr:LocationInfo;
