@@ -2,16 +2,7 @@ from pyshacl import validate
 import sys
 from rdflib import Graph
 
-def validate_using_shacl(filename):
-    print(filename)
-
-    try:
-        with open(filename, 'r') as file:
-            data_graph = file.read()
-    except FileNotFoundError:
-        print(f"Error: File '{filename}' not found.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+def validate_using_shacl(data_graph):
 
     resources = """
     
@@ -663,5 +654,8 @@ def validate_using_shacl(filename):
     if not conforms:
         print("Validation does not conform. There are violations.")
         print(b)
+        return False
     else:
         print('This is fine')
+
+    return True
