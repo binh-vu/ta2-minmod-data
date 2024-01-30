@@ -87,10 +87,10 @@ def create_drepr_update_github(file_path, filename):
     url = f'https://api.github.com/repos/{os.environ["GITHUB_REPOSITORY"]}/contents/{generated_ttl_path}'
     print(url)
 
-    # TODO: Implement getting existing files, Does not currently work
+    # TODO: Implement getting existing auto generated files, Does not currently work
     # existing_sha = get_sha(repo, file_path, branch)
 
-    validated_drepr = validate_pyshacl.validate_ttl(file_content)
+    validated_drepr = validate_pyshacl.validate_using_shacl(file_content)
 
     if not validated_drepr:
         print('Validation failed for pyshacl')
