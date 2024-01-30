@@ -101,7 +101,11 @@ def create_drepr_update_github(file_path, filename):
         'message': 'Update file via GitHub Actions',
         'content': encoded_content,
         'branch': branch,
-        'sha':None
+        'sha':None,
+        "committer": {
+            "name": "Namrata Sharma",
+            "email": "nsharma4@usc.edu"
+        }
     }
 
     # Make the API request to update the file
