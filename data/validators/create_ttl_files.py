@@ -100,7 +100,7 @@ def create_drepr_update_github(file_path, filename):
     payload = {
         'message': 'Update file via GitHub Actions',
         'content': encoded_content,
-        'branch': 'test-pr',
+        'branch': branch,
         'sha':None
     }
 
