@@ -85,7 +85,7 @@ def create_drepr_update_github(file_path, filename):
     repo = os.environ["GITHUB_REPOSITORY"]
     branch = os.environ["GITHUB_HEAD_REF"]
     url = f'https://api.github.com/repos/{os.environ["GITHUB_REPOSITORY"]}/contents/{generated_ttl_path}'
-    print(url)
+    print(url, branch)
 
     # TODO: Implement getting existing auto generated files, Does not currently work
     # existing_sha = get_sha(repo, file_path, branch)
