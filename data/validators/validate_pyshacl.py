@@ -36,6 +36,7 @@ def validate_using_shacl(filename):
 
     data_graph = data_graph + resources
 
+<<<<<<< HEAD
     shapes_graph = """
     @prefix gkbp:  <https://geokb.wikibase.cloud/wiki/Property:> .
     @prefix owl:   <http://www.w3.org/2002/07/owl#> .

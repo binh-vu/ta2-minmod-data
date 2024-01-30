@@ -1,18 +1,12 @@
 import re
 import json
 
-def mineral_site_uri(data):
+def mineral_site_uri(site):
     try:
-        # Process the JSON data (you can replace this with your processing logic)
-        print(type(data))
-        json_param = data.get('site')
-        if json_param is None:
+        if site is None:
             raise
-
-
-        processed_data = process_mineral_site(json_param)
+        processed_data = process_mineral_site(site)
         return ({"result": processed_data})
-
     except Exception as e:
         return ({"error": str(e)})
 
