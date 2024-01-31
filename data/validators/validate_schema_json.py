@@ -93,7 +93,6 @@ schema = {
                                 "reference": {
                                     "type": "object",
                                     "properties": {
-                                        "id": {"type": "number"},
                                         "document": {
                                             "type": "object",
                                             "properties": {
