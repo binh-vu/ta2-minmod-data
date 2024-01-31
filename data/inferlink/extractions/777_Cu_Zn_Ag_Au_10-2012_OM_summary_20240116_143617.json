@@ -54,14 +54,14 @@
         },
         {
           "commodity": "https://minmod.isi.edu/resource/Q589",
-          "category": ["https://minmod.isi.edu/resource/probable"],
+          "category": "https://minmod.isi.edu/resource/probable",
           "ore": {
             "ore_unit": "https://minmod.isi.edu/resource/Q200",
             "ore_value": 7464000
           },
           "grade": {
             "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 4.44
+            "grade_value": 4.45
           },
           "contained_metal": 331321.6,
           "reference": {
