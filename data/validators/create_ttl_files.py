@@ -9,31 +9,6 @@ import base64
 import subprocess
 import validate_pyshacl
 
-def get_sha(repo, path, branch):
-
-    url = f"https://api.github.com/repos/{repo}/contents/{path}?ref={branch}"
-    print(url)
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        content = response.json()
-        return content['sha']
-    else:
-        print(f"Error: {response.status_code}")
-        return None
-
-    sha = None
-
-    # Check if the request was successful
-    if response.status_code == 200:
-        # File exists, update it
-        sha = response.json()['sha']
-        return sha
-    else:
-        # File doesn't exist, create it
-        sha = None
-    return sha
-
 def is_json_file(file_path):
     path, file_extension = os.path.splitext(file_path)
     print(str(path))
@@ -71,52 +46,11 @@ def run_drepr_on_file(datasource):
 
 def create_drepr_update_github(file_path, filename):
     file_content = run_drepr_on_file(file_path)
-    pull_request_number = os.environ.get('GITHUB_REF').split('/')[-2]
-    github_token = os.environ.get('GITHUB_TOKEN')
-    print(github_token)
-    print(os.environ.get('GITHUB_REF'))
-
-    generated_ttl_path = f'generated_files/ttl_files/{filename}.ttl'
-    headers = {
-        'Authorization': f'Bearer {github_token}',
-        'Content-Type': 'application/json',
-    }
-    # owner, repo, path, branch
-    repo = os.environ["GITHUB_REPOSITORY"]
-    branch = os.environ["GITHUB_HEAD_REF"]
-    url = f'https://api.github.com/repos/{os.environ["GITHUB_REPOSITORY"]}/contents/{generated_ttl_path}'
-    print(url, branch)
-
-    # TODO: Implement getting existing auto generated files, Does not currently work
-    # existing_sha = get_sha(repo, file_path, branch)
-
     validated_drepr = validate_pyshacl.validate_using_shacl(file_content)
 
     if not validated_drepr:
         print('Validation failed for pyshacl')
         raise
-
-    encoded_content = base64.b64encode(file_content.encode()).decode()
-    payload = {
-        'message': 'Update file via GitHub Actions',
-        'content': encoded_content,
-        'branch': branch,
-        'sha':None,
-        "committer": {
-            "name": "Namrata Sharma",
-            "email": "nsharma4@usc.edu"
-        }
-    }
-
-    # Make the API request to update the file
-    response = requests.put(url, headers=headers, json=payload)
-
-    if response.status_code == 200 or response.status_code == 201:
-        print(f'Successfully updated file in pull request #{pull_request_number}')
-    else:
-        print(f'Failed to update file. Status code: {response.status_code}, Response: {response.text}')
-
-    return
 
 def create_drepr_from_workflow1(file_path, filename):
     print('In the 2nd file', file_path, filename)

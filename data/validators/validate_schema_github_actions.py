@@ -12,23 +12,6 @@ import validators
 def is_valid_uri(uri):
     return validators.url(uri)
 
-def get_sha(file_path):
-    repository = os.environ["GITHUB_REPOSITORY"]
-    url = f'https://api.github.com/repos/{repository}/contents/{file_path}'
-    headers = {
-        'Authorization': f'Bearer {os.environ["GITHUB_TOKEN"]}',
-        'Accept': 'application/vnd.github.v3+json',
-    }
-    response = requests.get(url, headers=headers)
-    sha = None
-    print(url)
-    if response.status_code == 200:
-        sha = response.json()['sha']
-        return sha
-    else:
-        sha = None
-    return sha
-
 
 def mineral_site_uri(data):
     response = generate_uris.mineral_site_uri(data)
@@ -70,59 +53,6 @@ def get_filename(file_path):
     split_path = path.split('/')
     if len(path) > 0:
         return split_path[-1]
-
-def file_datasource(file_path):
-    path, file_extension = os.path.splitext(file_path)
-    split_path = path.split('/')
-    if len(split_path) == 2 and split_path[0] == 'inferlink':
-        print('This is under data folder')
-        return split_path[0]
-    return ''
-
-
-
-def update_pull_request(file_content, file_path):
-    pull_request_number = os.environ.get('GITHUB_REF').split('/')[-2]
-    github_token = os.environ.get('GITHUB_TOKEN')
-
-    print(github_token)
-    print(os.environ.get('GITHUB_REF'))
-
-    url = f'https://api.github.com/repos/{os.environ["GITHUB_REPOSITORY"]}/pulls/{pull_request_number}/files/{file_path}'
-    url2 = "https://api.github.com/repos/:owner/:repo/pulls/:number"
-    headers = {
-        'Authorization': f'Bearer {github_token}',
-        'Content-Type': 'application/json',
-    }
-    # owner, repo, path, branch
-    repo = os.environ["GITHUB_REPOSITORY"]
-    branch = os.environ["GITHUB_HEAD_REF"]
-    existing_sha = get_sha(file_path)
-
-    path, file_extension = os.path.splitext(file_path)
-    split_path = path.split('/')
-    filename = split_path[-1]
-
-    generated_json_path = f'generated_files/json_files/{filename}.json'
-
-    print(branch, existing_sha)
-    url = f'https://api.github.com/repos/{os.environ["GITHUB_REPOSITORY"]}/contents/{generated_json_path}'
-    print(url)
-    encoded_content = base64.b64encode(file_content.encode()).decode()
-    payload = {
-        'message': 'Update file via GitHub Actions',
-        'content': encoded_content,
-        'sha': existing_sha,
-        'branch': branch
-    }
-
-    # Make the API request to update the file
-    response = requests.put(url, headers=headers, json=payload)
-
-    if response.status_code == 200 or response.status_code == 201:
-        print(f'Successfully updated file in pull request #{pull_request_number}')
-    else:
-        print(f'Failed to update file. Status code: {response.status_code}, Response: {response.text}')
 
 def validate_json_schema(filename):
     try:
@@ -368,11 +298,6 @@ if is_json_file_under_data(file_path):
     #     # Write the new data to the file
     #     file.write(json.dumps(json_data, indent=2) + '\n')
     create_ttl_files.create_drepr_from_workflow1(file_path, filename)
-
-
-
-
-
 else:
     print(f'{file_path} is not a JSON file')
 
