@@ -121,7 +121,6 @@ def validate_json_schema(filename):
                                     "reference": {
                                         "type": "object",
                                         "properties": {
-                                            "id": {"type": "number"},
                                             "document": {
                                                 "type": "object",
                                                 "properties": {

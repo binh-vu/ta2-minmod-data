@@ -146,11 +146,6 @@ def validate_using_shacl(data_graph):
             sh:minCount 0 ;
             sh:class mndr:PageInfo ;
         ];
-        sh:property [   
-            sh:path mndr:id ;
-            sh:minCount 0 ;
-            sh:datatype xsd:integer ;
-        ];
         .
         
     mndr:MineralInventory  a  sh:NodeShape ;

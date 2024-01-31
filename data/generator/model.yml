@@ -782,7 +782,6 @@ semantic_model:
 
   mndr:Reference:1:
     properties:
-      - [ mndr:id, id_reference ]
       - [ mndr:date, id_reference ]
     links:
       - - mndr:document
