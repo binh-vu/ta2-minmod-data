@@ -13,7 +13,6 @@ def mineral_site_uri(site):
 
 def document_uri(data):
     try:
-        print(type(data))
         json_param = data.get('document')
         if json_param is None:
             raise
@@ -121,7 +120,6 @@ def slugify(s):
     s = re.sub('\s+', ' ', s)
     s = s.strip()
     s = s.replace(' ', '')
-    print(s)
     return s
 
 

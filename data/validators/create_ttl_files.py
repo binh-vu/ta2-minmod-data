@@ -15,7 +15,6 @@ def is_json_file(file_path):
     split_path = path.split('/')
     is_under_data_folder = False
     if len(split_path) == 2 and split_path[0] == 'inferlink':
-        print('This is under data folder')
         is_under_data_folder = True
 
     return is_under_data_folder and file_extension.lower() == '.json'
@@ -24,7 +23,6 @@ def file_datasource(file_path):
     path, file_extension = os.path.splitext(file_path)
     split_path = path.split('/')
     if len(split_path) == 2 and split_path[0] == 'inferlink':
-        print('This is under data folder')
         return split_path[0]
     return ''
 
@@ -44,7 +42,7 @@ def run_drepr_on_file(datasource):
         print("Command output (if any):", e.output)
         return ''
 
-def create_drepr_update_github(file_path, filename):
+def create_drepr_file(file_path, filename):
     file_content = run_drepr_on_file(file_path)
     validated_drepr = validate_pyshacl.validate_using_shacl(file_content)
 
@@ -53,13 +51,9 @@ def create_drepr_update_github(file_path, filename):
         raise
 
 def create_drepr_from_workflow1(file_path, filename):
-    print('In the 2nd file', file_path, filename)
     generated_json_path = f'generated_files/json_files/{filename}.json'
 
     with open(file_path, 'r') as file:
         file_contents = file.read()
-    print("File Contents After Printing:")
-    print(file_contents)
-
-    create_drepr_update_github(file_path, filename)
+    create_drepr_file(file_path, filename)
 

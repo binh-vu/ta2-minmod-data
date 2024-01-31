@@ -15,35 +15,26 @@ def is_valid_uri(uri):
 
 def mineral_site_uri(data):
     response = generate_uris.mineral_site_uri(data)
-    uri = ''
-    print(response)
     uri = response['result']
     return uri
 
 def document_uri(data):
     response = generate_uris.document_uri(data)
-    uri = ''
-    print(response)
     uri = response['result']
     return uri
 
 def mineral_inventory_uri(param1):
     response = generate_uris.mineral_inventory_uri(param1)
-    uri = ''
-    print(response)
     uri = response['result']
     return uri
 
 def is_json_file_under_data(file_path):
     path, file_extension = os.path.splitext(file_path)
-    print(str(path), file_path)
     split_path = path.split('/')
     is_under_data_folder = False
-    print(split_path[-3], split_path[-2])
     if len(split_path) > 0:
         if (len(split_path) > 3 and split_path[-4] == 'data' and split_path[-3] == 'inferlink' and split_path[-2] == 'extractions') \
                 or (len(split_path) > 2 and split_path[-2] == 'umn'):
-            print('This is under data folder')
             is_under_data_folder = True
 
     return is_under_data_folder and file_extension.lower() == '.json'
@@ -218,19 +209,10 @@ def validate_json_schema(filename):
 changed_files = sys.argv[1]
 temp_file = sys.argv[2]
 
-print('Running this')
-print(changed_files, temp_file)
-
 file_path = changed_files
 if is_json_file_under_data(file_path):
-    print(f'{file_path} is a JSON file')
+    print(f'{file_path} is a JSON file, running validation on it')
     json_data = validate_json_schema(file_path)
-    # json_data=''
-    # with open(file_path) as file:
-    #     json_data = json.load(file)
-
-    # json_string = json.dumps(json_data)
-    # mineral_site_json = json.loads(json_string)
 
     ms_list = json_data['MineralSite']
     mndr_url = 'https://minmod.isi.edu/resource/'
@@ -286,19 +268,11 @@ if is_json_file_under_data(file_path):
                         document['id'] = mndr_url + document_uri(doc_data)
 
 
-    # update_pull_request(json.dumps(json_data, indent=2), file_path)
-    print(json.dumps(json_data, indent=2))
     filename = get_filename(file_path)
     with open(file_path, 'w') as file:
         # Write the new data to the file
         file.write(json.dumps(json_data, indent=2) + '\n')
-
-    # with open(temp_file, 'a') as file:
-    #     # Write the new data to the file
-    #     file.write(json.dumps(json_data, indent=2) + '\n')
     create_ttl_files.create_drepr_from_workflow1(file_path, filename)
 else:
     print(f'{file_path} is not a JSON file')
 
-
-# print(type(json_data))
