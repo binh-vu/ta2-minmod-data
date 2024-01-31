@@ -760,7 +760,6 @@ semantic_model:
         - id
       - - mndr:contained_metal
         - contained_metal
-        - xsd:string
       - - mndr:date
         - date
         - xsd:date
