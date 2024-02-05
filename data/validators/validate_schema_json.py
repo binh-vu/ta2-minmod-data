@@ -64,14 +64,9 @@ schema = {
                             "location_source": {"type": "string"}
                         }
                     },
-                    "deposit_type" : {
+                    "deposit_type": {
                         "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "id": {"type": "string"}
-                            }
-                        }
+                        "items": {"type": "string"}
                     },
                     "geology_info": {
                         "type": "object",
@@ -207,8 +202,7 @@ headers = {"Content-Type": "application/json"}
 for ms in ms_list:
     if "deposit_type" in ms:
         for dp in ms['deposit_type']:
-            if "deposit_type" in dp:
-                is_valid_uri(dp['id'])
+            is_valid_uri(dp)
 
     ms['id'] = mndr_url + mineral_site_uri(ms)
 
@@ -274,6 +268,6 @@ if not file_exists:
     os.makedirs(os.path.dirname(file_to_write), exist_ok=True)
 
 with open(file_to_write, 'w') as file:
-    file.write(json.dumps(json_data))
+    file.write(json.dumps(json_data, indent=2))
 
 
