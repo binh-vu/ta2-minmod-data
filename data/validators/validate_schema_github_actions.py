@@ -175,13 +175,12 @@ def validate_json_schema(filename):
                                     }
                                 },
                                 "required": ["reference"]
-
                             }
                         }
-                    },
-                    "required": ["name"]
-                },
-                "required": ["source_id", "record_id"]
+                    }
+                    ,
+                    "required": ["source_id", "record_id"]
+                }
             }
         }
     }
