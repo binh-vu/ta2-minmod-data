@@ -1,6 +1,6 @@
 # MinMod Knowledge Graph - Data Format
 
-## Note: This page is under construction as we are aligning schemas and data at the Feb hackathon
+## Note: This page is under construction as we are aligning schemas and data at the May hackathon
 
 In order to deploy data to the knowledge graph in minmod, the ttl file needs to be in a specific format that follows our data schema design. In order to generate this ttl file, we would be requiring our stakeholders to submit data in a specific json format, that follow a certain structure, data types, domain and ranges for the values.
 This documentation is to highlight the requirements for any data json being sent
@@ -9,7 +9,16 @@ The json files should be uploaded to the following folders:
 
 1. [UMN](umn)
 2. [SRI](sri)
-3. [Inferlink](inferlink)
+3. [Inferlink](inferlink/extractions)
+4. [USC](usc)
+
+Under specific folders:
+
+1. [Mineral System](sri/mappableCriteria) The Mineral System data is added by sri
+
+The following folders will be depreacted once code is fully migrated to a separate code repo:
+1. [validators](validators)
+2. [generator](generator)
 
 Commodities, deposit types, and unit names URI's need to match minmod URI's. The list of currently added entities:
 
@@ -19,11 +28,18 @@ Commodities, deposit types, and unit names URI's need to match minmod URI's. The
 
 New entities can be added by TA2 Minmod group if required.
 
-#### Structure of the file
+[Same As](https://github.com/DARPA-CRITICALMAAS/ta2-minmod-data/blob/main/data/entities/sameAs/sameas_mineralsites.csv) stores same as relationships between different mineral sites with different minmod URIs
+
+
+#### Structure of the Mineral Site file
 
 The structure of the file will be similar to the example file - [example_json_file](example_mine.json)
 
-#### Required Fields and Data types
+#### Structure of the Mineral System file
+
+The structure of the file will be similar to the example file - [example_json_file](example_mineral_system.json)
+
+#### Required Fields and Data types Mineral Site
 The data types and required fields in the json are highlighted in [schema_file](datatypes.json)
 
 #### Domain and Ranges
