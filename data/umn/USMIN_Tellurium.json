@@ -2,9 +2,6 @@
     "MineralSite": [
         {
             "deposit_type_candidate": [],
-            "source_id": "https://mrdata.usgs.gov/deposit/",
-            "record_id": "MT00017",
-            "name": "Butte Mining District",
             "mineral_inventory": [
                 {
                     "observed_commodity": "arsenic",
@@ -115,6 +112,14 @@
                     }
                 },
                 {
+                    "observed_commodity": "sulfuric acid",
+                    "reference": {
+                        "document": {
+                            "uri": "https://mrdata.usgs.gov/deposit/"
+                        }
+                    }
+                },
+                {
                     "observed_commodity": "sulfur",
                     "commodity": "https://minmod.isi.edu/resource/Q633",
                     "reference": {
@@ -142,17 +147,17 @@
                     }
                 }
             ],
+            "record_id": "MT00007",
+            "name": "Butte",
+            "source_id": "https://mrdata.usgs.gov/deposit/",
             "location_info": {
-                "location": "POINT (-112.523 46.023)",
                 "crs": "EPSG:4326",
-                "country": "United States"
+                "country": "United States",
+                "location": "POINT (-112.496 46.014)"
             }
         },
         {
             "deposit_type_candidate": [],
-            "source_id": "https://mrdata.usgs.gov/deposit/",
-            "record_id": "MT00007",
-            "name": "Butte",
             "mineral_inventory": [
                 {
                     "observed_commodity": "arsenic",
@@ -263,6 +268,14 @@
                     }
                 },
                 {
+                    "observed_commodity": "sulfuric acid",
+                    "reference": {
+                        "document": {
+                            "uri": "https://mrdata.usgs.gov/deposit/"
+                        }
+                    }
+                },
+                {
                     "observed_commodity": "sulfur",
                     "commodity": "https://minmod.isi.edu/resource/Q633",
                     "reference": {
@@ -290,10 +303,13 @@
                     }
                 }
             ],
+            "record_id": "MT00017",
+            "name": "Butte Mining District",
+            "source_id": "https://mrdata.usgs.gov/deposit/",
             "location_info": {
-                "location": "POINT (-112.496 46.014)",
                 "crs": "EPSG:4326",
-                "country": "United States"
+                "country": "United States",
+                "location": "POINT (-112.523 46.023)"
             }
         }
     ]
