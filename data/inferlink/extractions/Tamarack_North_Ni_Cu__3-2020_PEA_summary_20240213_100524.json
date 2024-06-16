@@ -5,26 +5,46 @@
       "record_id": 1,
       "name": "Updated Preliminary Economic Assessment on the Tamarack North Project",
       "location_info": {
-        "country": "https://minmod.isi.edu/resource/Q1235",
-        "state_or_province": "https://minmod.isi.edu/resource/Q6870"
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "Inferlink Extraction v1",
+          "confidence": 1.0
+        },
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6870",
+          "source": "Inferlink Extraction v1",
+          "confidence": 1.0
+        }
       },
       "mineral_inventory": [
         {
-          "commodity": "https://minmod.isi.edu/resource/Q578",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q578",
+            "source": "Inferlink Extraction v1",
+            "confidence": 0.9
+          },
           "category": [
-            "https://minmod.isi.edu/resource/inferred"
+            {
+              "normalized_uri": "https://minmod.isi.edu/resource/inferred",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           ],
           "ore": {
-            "ore_unit": "https://minmod.isi.edu/resource/Q200",
-            "ore_value": 570000.0
+            "value": 570000.0,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 5.86
-          },
-          "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q210",
-            "grade_value": 0.83
+            "value": 5.86,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "contained_metal": 33402.0,
           "reference": {
@@ -55,21 +75,33 @@
           "zone": "msu"
         },
         {
-          "commodity": "https://minmod.isi.edu/resource/Q578",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q578",
+            "source": "Inferlink Extraction v1",
+            "confidence": 0.9
+          },
           "category": [
-            "https://minmod.isi.edu/resource/inferred"
+            {
+              "normalized_uri": "https://minmod.isi.edu/resource/inferred",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           ],
           "ore": {
-            "ore_unit": "https://minmod.isi.edu/resource/Q200",
-            "ore_value": 2705000.0
+            "value": 2705000.0,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 0.95
-          },
-          "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q210",
-            "grade_value": 0.83
+            "value": 0.95,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "contained_metal": 25697.5,
           "reference": {
@@ -100,21 +132,33 @@
           "zone": "138 zone"
         },
         {
-          "commodity": "https://minmod.isi.edu/resource/Q578",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q578",
+            "source": "Inferlink Extraction v1",
+            "confidence": 0.9
+          },
           "category": [
-            "https://minmod.isi.edu/resource/inferred"
+            {
+              "normalized_uri": "https://minmod.isi.edu/resource/inferred",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           ],
           "ore": {
-            "ore_unit": "https://minmod.isi.edu/resource/Q200",
-            "ore_value": 4382000.0
+            "value": 4382000.0,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 1.58
-          },
-          "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q210",
-            "grade_value": 0.83
+            "value": 1.58,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "contained_metal": 69235.6,
           "reference": {
@@ -145,21 +189,33 @@
           "zone": "total"
         },
         {
-          "commodity": "https://minmod.isi.edu/resource/Q578",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q578",
+            "source": "Inferlink Extraction v1",
+            "confidence": 0.9
+          },
           "category": [
-            "https://minmod.isi.edu/resource/indicated"
+            {
+              "normalized_uri": "https://minmod.isi.edu/resource/indicated",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           ],
           "ore": {
-            "ore_unit": "https://minmod.isi.edu/resource/Q200",
-            "ore_value": 3639000.0
+            "value": 3639000.0,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 1.83
-          },
-          "cutoff_grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q210",
-            "grade_value": 0.83
+            "value": 1.83,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "contained_metal": 2450.0,
           "reference": {

@@ -6,23 +6,51 @@
       "name": "NI 43-101 Technical Report for the Mayville-Makwa Project in North America dated April 2014",
       "location_info": {
         "location": "MULTIPOINT(-95.440556 50.586111,-95.507222 50.577778)",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1038",
-        "state_or_province": "https://minmod.isi.edu/resource/Q2655"
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "Inferlink Extraction v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038",
+          "source": "Inferlink Extraction v1",
+          "confidence": 1.0
+        },
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2655",
+          "source": "Inferlink Extraction v1",
+          "confidence": 1.0
+        }
       },
       "mineral_inventory": [
         {
-          "commodity": "https://minmod.isi.edu/resource/Q537",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q537",
+            "source": "Inferlink Extraction v1",
+            "confidence": 0.9
+          },
           "category": [
-            "https://minmod.isi.edu/resource/inferred"
+            {
+              "normalized_uri": "https://minmod.isi.edu/resource/inferred",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           ],
           "ore": {
-            "ore_unit": "https://minmod.isi.edu/resource/Q200",
-            "ore_value": 832000.0
+            "value": 832000.0,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q200",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 0.017
+            "value": 0.017,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "contained_metal": 141440.00000000003,
           "reference": {

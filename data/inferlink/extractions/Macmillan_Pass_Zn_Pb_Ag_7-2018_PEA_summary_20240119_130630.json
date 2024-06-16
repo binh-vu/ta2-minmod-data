@@ -6,24 +6,52 @@
       "name": "NI 43-101 Technical Report Macmillan Pass Project Yukon Territory Canada",
       "location_info": {
         "location": "POINT(-130.15 63.16667)",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1038",
-        "state_or_province": "https://minmod.isi.edu/resource/Q2665"
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "Inferlink Extraction v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1038",
+          "source": "Inferlink Extraction v1",
+          "confidence": 1.0
+        },
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2665",
+          "source": "Inferlink Extraction v1",
+          "confidence": 1.0
+        }
       },
       "mineral_inventory": [
         {
           "id": 1,
-          "commodity": "https://minmod.isi.edu/resource/Q589",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q589",
+            "source": "Inferlink Extraction v1",
+            "confidence": 0.9
+          },
           "category": [
-            "https://minmod.isi.edu/resource/indicated"
+            {
+              "normalized_uri": "https://minmod.isi.edu/resource/indicated",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           ],
           "ore": {
-            "ore_unit": "https://minmod.isi.edu/resource/Q202",
-            "ore_value": 11.21
+            "value": 11.21,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q202",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 6.59
+            "value": 6.59,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "contained_metal": 739197000,
           "reference": {
@@ -53,17 +81,33 @@
         },
         {
           "id": 2,
-          "commodity": "https://minmod.isi.edu/resource/Q589",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q589",
+            "source": "Inferlink Extraction v1",
+            "confidence": 0.9
+          },
           "category": [
-            "https://minmod.isi.edu/resource/inferred"
+            {
+              "normalized_uri": "https://minmod.isi.edu/resource/inferred",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           ],
           "ore": {
-            "ore_unit": "https://minmod.isi.edu/resource/Q202",
-            "ore_value": 39.47
+            "value": 39.47,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q202",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "grade": {
-            "grade_unit": "https://minmod.isi.edu/resource/Q201",
-            "grade_value": 5.84
+            "value": 5.84,
+            "unit": {
+              "normalized_uri": "https://minmod.isi.edu/resource/Q201",
+              "source": "Inferlink Extraction v1",
+              "confidence": 0.9
+            }
           },
           "contained_metal": 2303852800,
           "reference": {

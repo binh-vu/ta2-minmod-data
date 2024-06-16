@@ -7,9 +7,21 @@
       "name": "Silver Peak Marsh",
       "mineral_inventory": [],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6876",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6876",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.561251 37.781133)"
       }
     },
@@ -26,8 +38,12 @@
       "name": "Rhyolite Ridge",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -35,8 +51,12 @@
           }
         },
         {
-          "observed_commodity": "potassium",
-          "commodity": "https://minmod.isi.edu/resource/Q583",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q583",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "potassium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -45,9 +65,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6876",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6876",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.895009 37.810671)"
       }
     },
@@ -64,8 +96,12 @@
       "name": "Kings Mountain",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -74,9 +110,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6881",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6881",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-81.354625 35.221938)"
       }
     },
@@ -87,8 +135,12 @@
       "name": "Kings Mountain District",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -96,8 +148,12 @@
           }
         },
         {
-          "observed_commodity": "tin",
-          "commodity": "https://minmod.isi.edu/resource/Q587",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q587",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "tin"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -106,10 +162,22 @@
         }
       ],
       "location_info": {
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-81.323424 35.332076)",
-        "extracted_state_or_province": "NC; SC"
+        "state_or_province": {
+          "observed_name": "NC; SC",
+          "source": "UMN Exact Match v1",
+          "confidence": 0.0
+        }
       }
     },
     {
@@ -130,8 +198,12 @@
       "name": "Kings Valley",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -139,8 +211,12 @@
           }
         },
         {
-          "observed_commodity": "potassium",
-          "commodity": "https://minmod.isi.edu/resource/Q583",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q583",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "potassium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -148,8 +224,12 @@
           }
         },
         {
-          "observed_commodity": "sodium",
-          "commodity": "https://minmod.isi.edu/resource/Q660",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q660",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "sodium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -158,9 +238,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6876",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6876",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-118.134605 41.711978)"
       }
     },
@@ -177,8 +269,12 @@
       "name": "Great Salt Lake",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -186,8 +282,12 @@
           }
         },
         {
-          "observed_commodity": "chlorine",
-          "commodity": "https://minmod.isi.edu/resource/Q622",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q622",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "chlorine"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -196,9 +296,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6897",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6897",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-112.799109 41.024278)"
       }
     },
@@ -209,8 +321,12 @@
       "name": "Salton Trough",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -218,8 +334,12 @@
           }
         },
         {
-          "observed_commodity": "zinc",
-          "commodity": "https://minmod.isi.edu/resource/Q589",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q589",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "zinc"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -227,8 +347,12 @@
           }
         },
         {
-          "observed_commodity": "lead",
-          "commodity": "https://minmod.isi.edu/resource/Q565",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q565",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lead"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -236,8 +360,12 @@
           }
         },
         {
-          "observed_commodity": "sodium",
-          "commodity": "https://minmod.isi.edu/resource/Q660",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q660",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "sodium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -245,8 +373,12 @@
           }
         },
         {
-          "observed_commodity": "potassium",
-          "commodity": "https://minmod.isi.edu/resource/Q583",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q583",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "potassium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -254,8 +386,12 @@
           }
         },
         {
-          "observed_commodity": "calcium",
-          "commodity": "https://minmod.isi.edu/resource/Q621",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q621",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "calcium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -263,8 +399,12 @@
           }
         },
         {
-          "observed_commodity": "strontium",
-          "commodity": "https://minmod.isi.edu/resource/Q609",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q609",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "strontium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -272,8 +412,12 @@
           }
         },
         {
-          "observed_commodity": "rubidium",
-          "commodity": "https://minmod.isi.edu/resource/Q605",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q605",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "rubidium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -281,8 +425,12 @@
           }
         },
         {
-          "observed_commodity": "cesium",
-          "commodity": "https://minmod.isi.edu/resource/Q591",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q591",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "cesium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -290,8 +438,12 @@
           }
         },
         {
-          "observed_commodity": "iron",
-          "commodity": "https://minmod.isi.edu/resource/Q561",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q561",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "iron"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -299,8 +451,12 @@
           }
         },
         {
-          "observed_commodity": "manganese",
-          "commodity": "https://minmod.isi.edu/resource/Q571",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q571",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "manganese"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -308,8 +464,12 @@
           }
         },
         {
-          "observed_commodity": "silica",
-          "commodity": "https://minmod.isi.edu/resource/Q657",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q657",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "silica"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -318,9 +478,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6845",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6845",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-115.716942 33.238405)"
       }
     },
@@ -337,8 +509,12 @@
       "name": "Salton Sea",
       "mineral_inventory": [
         {
-          "observed_commodity": "sodium",
-          "commodity": "https://minmod.isi.edu/resource/Q660",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q660",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "sodium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -346,8 +522,12 @@
           }
         },
         {
-          "observed_commodity": "potassium",
-          "commodity": "https://minmod.isi.edu/resource/Q583",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q583",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "potassium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -355,8 +535,12 @@
           }
         },
         {
-          "observed_commodity": "calcium",
-          "commodity": "https://minmod.isi.edu/resource/Q621",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q621",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "calcium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -364,8 +548,12 @@
           }
         },
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -373,8 +561,12 @@
           }
         },
         {
-          "observed_commodity": "strontium",
-          "commodity": "https://minmod.isi.edu/resource/Q609",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q609",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "strontium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -382,8 +574,12 @@
           }
         },
         {
-          "observed_commodity": "rubidium",
-          "commodity": "https://minmod.isi.edu/resource/Q605",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q605",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "rubidium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -391,8 +587,12 @@
           }
         },
         {
-          "observed_commodity": "cesium",
-          "commodity": "https://minmod.isi.edu/resource/Q591",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q591",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "cesium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -400,8 +600,12 @@
           }
         },
         {
-          "observed_commodity": "iron",
-          "commodity": "https://minmod.isi.edu/resource/Q561",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q561",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "iron"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -409,8 +613,12 @@
           }
         },
         {
-          "observed_commodity": "manganese",
-          "commodity": "https://minmod.isi.edu/resource/Q571",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q571",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "manganese"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -418,8 +626,12 @@
           }
         },
         {
-          "observed_commodity": "lead",
-          "commodity": "https://minmod.isi.edu/resource/Q565",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q565",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lead"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -427,8 +639,12 @@
           }
         },
         {
-          "observed_commodity": "zinc",
-          "commodity": "https://minmod.isi.edu/resource/Q589",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q589",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "zinc"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -436,8 +652,12 @@
           }
         },
         {
-          "observed_commodity": "silica",
-          "commodity": "https://minmod.isi.edu/resource/Q657",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q657",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "silica"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -446,9 +666,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6845",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6845",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-115.62648 33.228823)"
       }
     },
@@ -465,8 +697,12 @@
       "name": "Clayton Valley-Zeus",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -475,9 +711,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6876",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6876",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.505112 37.775379)"
       }
     },
@@ -494,8 +742,12 @@
       "name": "Piedmont",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -503,8 +755,12 @@
           }
         },
         {
-          "observed_commodity": "quartz",
-          "commodity": "https://minmod.isi.edu/resource/Q630",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q630",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "quartz"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -512,8 +768,12 @@
           }
         },
         {
-          "observed_commodity": "feldspar",
-          "commodity": "https://minmod.isi.edu/resource/Q542",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q542",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "feldspar"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -521,8 +781,12 @@
           }
         },
         {
-          "observed_commodity": "mica",
-          "commodity": "https://minmod.isi.edu/resource/Q574",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q574",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "mica"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -531,9 +795,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6881",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6881",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-81.288113 35.391507)"
       }
     },
@@ -550,8 +826,12 @@
       "name": "Smackover-Lanxess",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -559,8 +839,12 @@
           }
         },
         {
-          "observed_commodity": "bromine",
-          "commodity": "https://minmod.isi.edu/resource/Q620",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q620",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "bromine"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -569,9 +853,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6843",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6843",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-92.956 33.07324)"
       }
     },
@@ -593,8 +889,12 @@
       "name": "Fort Cady",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -603,9 +903,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6845",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6845",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-116.41756 34.753293)"
       }
     },
@@ -622,8 +934,12 @@
       "name": "Clayton Valley brine operation",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -632,9 +948,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6876",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6876",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.553474 37.797783)"
       }
     },
@@ -651,8 +979,12 @@
       "name": "Bonnie Claire",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -661,9 +993,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6876",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6876",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.022487 37.199778)"
       }
     },
@@ -685,8 +1029,12 @@
       "name": "Searles Lake",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -694,8 +1042,12 @@
           }
         },
         {
-          "observed_commodity": "tungsten",
-          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q615",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "tungsten"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -704,9 +1056,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6845",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6845",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.327206 35.716747)"
       }
     },
@@ -723,8 +1087,12 @@
       "name": "Smackover-Tetra",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -733,9 +1101,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6843",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6843",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-93.52507 33.266471)"
       }
     },
@@ -752,8 +1132,12 @@
       "name": "Clayton Valley-Cypress",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -762,9 +1146,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6876",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6876",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.538565 37.738723)"
       }
     },
@@ -781,8 +1177,12 @@
       "name": "Clayton Valley South",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -791,9 +1191,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6876",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6876",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.594125 37.722807)"
       }
     },
@@ -804,8 +1216,12 @@
       "name": "McDermitt Caldera",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -814,10 +1230,22 @@
         }
       ],
       "location_info": {
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-117.994858 41.903853)",
-        "extracted_state_or_province": "NV; OR"
+        "state_or_province": {
+          "observed_name": "NV; OR",
+          "source": "UMN Exact Match v1",
+          "confidence": 0.0
+        }
       }
     },
     {
@@ -827,8 +1255,12 @@
       "name": "Regional Smackover brine",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -836,8 +1268,12 @@
           }
         },
         {
-          "observed_commodity": "bromine",
-          "commodity": "https://minmod.isi.edu/resource/Q620",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q620",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "bromine"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -846,9 +1282,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6843",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6843",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-93.102523 33.248405)"
       }
     },
@@ -865,8 +1313,12 @@
       "name": "Bessemer City",
       "mineral_inventory": [
         {
-          "observed_commodity": "lithium",
-          "commodity": "https://minmod.isi.edu/resource/Q569",
+          "commodity": {
+            "normalized_uri": "https://minmod.isi.edu/resource/Q569",
+            "source": "UMN Exact Match v1",
+            "confidence": 0.9,
+            "observed_name": "lithium"
+          },
           "reference": {
             "document": {
               "uri": "https://mrdata.usgs.gov/deposit"
@@ -875,9 +1327,21 @@
         }
       ],
       "location_info": {
-        "state_or_province": "https://minmod.isi.edu/resource/Q6881",
-        "crs": "https://minmod.isi.edu/resource/Q701",
-        "country": "https://minmod.isi.edu/resource/Q1235",
+        "state_or_province": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q6881",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "crs": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q701",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
+        "country": {
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1235",
+          "source": "UMN Exact Match v1",
+          "confidence": 1.0
+        },
         "location": "POINT (-81.314631 35.336391)"
       }
     }
