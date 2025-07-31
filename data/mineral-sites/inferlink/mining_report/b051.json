@@ -29994,5 +29994,1209 @@
     ],
     "created_by": "https://minmod.isi.edu/users/s/inferlink",
     "modified_at": "2024-11-13T22:29:57.800609Z"
+  },
+  {
+    "source_id": "https://api.cdr.land/v1/docs/documents",
+    "record_id": "024747f3624ba65c39f20086bcce0fe43fc9ce5c246a1c382d09b237b3b2482b90",
+    "name": "Aynak Copper, Cobalt, and Chromium Area of Interest",
+    "location_info": {
+      "country": [
+        {
+          "source": "Inferlink Extraction v3",
+          "confidence": 1.0,
+          "observed_name": "Afghanistan",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1000"
+        },
+        {
+          "source": "Inferlink Extraction v3",
+          "confidence": 1.0,
+          "observed_name": "AFG",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q1000"
+        }
+      ],
+      "state_or_province": [
+        {
+          "source": "Inferlink Extraction v3",
+          "confidence": 1.0,
+          "observed_name": "Kabul",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2014"
+        },
+        {
+          "source": "Inferlink Extraction v3",
+          "confidence": 1.0,
+          "observed_name": "Logar",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q2021"
+        }
+      ],
+      "crs": {
+        "source": "Inferlink Extraction v3",
+        "confidence": 1.0,
+        "observed_name": "EPSG:4326",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q701"
+      }
+    },
+    "deposit_type_candidate": [
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Oil sands",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q312"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Coal",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q338"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Matter tremolite asbestos"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Residual placer tin",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q301"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Residual placer lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q302"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q303"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q304"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer tin",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q305"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer niobium-tantalum",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q306"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer tungsten",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q307"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q308"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer diamond",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q309"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer gemstones",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q310"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Fluvial placer garnet",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q311"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Heavy mineral sands",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q312"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Shoreline placer gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q313"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Paleoplacer heavy mineral sands",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q314"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Paleoplacer tin",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q315"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Paleoplacer gold ± uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q316"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Bauxite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q317"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Karst bauxite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q318"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Laterite nickel",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q319"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Carbonatite laterite REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q320"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Laterite magnesite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q321"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Residual clay",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q322"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Underclay overclay",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q323"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Ion adsorption REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q324"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene silver",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q325"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q326"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q327"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene vanadium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q328"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q329"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene zinc",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q330"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene copper",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q331"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene manganese",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q332"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Supergene iron",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q333"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Exotic copper",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q334"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Paleochannel iron",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q335"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Sandstone uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q336"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Carbonate uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q337"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Coal/peat/bog uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q338"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Calcrete uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q339"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Nodular magnesite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q340"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Marine evaporite gypsum",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q341"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Marine evaporite salt",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q342"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Marine evaporite potash",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q343"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Marine evaporite magnesite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q344"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine evaporite trona",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q345"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine evaporite salt",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q346"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine evaporite potash",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q347"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine evaporite carnallite-bischofite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q348"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine evaporite borate",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q349"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine evaporite magnesite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q350"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine evaporite nitrate",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q351"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Marine brine potash (±Mg, Li, and so on)",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q352"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine brine potash",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q353"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine brine lithium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q354"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine zeolite (± Li, B)",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q355"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine clay lithium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q356"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Black shale vanadium ± Mo ± Ni",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q357"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Black shale nickel ± Mo-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q358"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Black shale gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q359"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Black shale uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q360"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Phosphorite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q361"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Superior-type banded iron formation",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q362"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Oolitic iron formation",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q363"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine iron formation",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q364"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Superior-type banded manganese",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q365"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Sedimentary manganese",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q366"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Crust manganese",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q367"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Nodule manganese",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q368"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Lacustrine manganese",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q369"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Unconformity-related uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q370"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Unconformity-related REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q371"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Collapse breccia pipe uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q372"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Volcanic-hosted copper",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q373"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Sediment-hosted copper ± Co",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q374"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Siliciclastic-mafic zinc-lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q375"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Siliciclastic-mafic barite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q376"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Siliciclastic-carbonate zinc-lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q377"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Irish-type sediment-hosted zinc-lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q378"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Kipushi-type sediment-hosted copper-zinc-lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q379"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "MVT zinc-lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q380"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "MVT barite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q381"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "MVT fluorspar",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q382"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "MVT strontium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q383"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Sandstone-hosted zinc-lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q384"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Non-sulfide zinc-lead ± Mn",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q385"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein five-element",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q386"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Hypozonal orogenic gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q387"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Mesozonal orogenic gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q388"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Epizonal orogenic gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q389"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Epizonal orogenic antimony ± gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q390"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Epizonal orogenic mercury",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q391"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Orogenic silver-lead-zinc-copper-antimony",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q392"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Orogenic copper ± gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q393"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Orogenic graphite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q394"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Metamorphic graphite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q395"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Metamorphic kyanite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q396"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Low Iron alkali-calcic",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q397"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Albitite-hosted uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q398"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Ferroan carbonate polymetallic",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q399"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Iron sulfide polymetallic",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q400"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Iron silicate polymetallic",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q401"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Iron oxide polymetallic",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q402"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Iron oxide uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q403"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Iron oxide gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q404"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Hematite-dominant IOCG",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q405"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Magnetite-dominant IOCG",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q406"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Hematite-dominant IOA",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q407"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Magnetite-dominant IOA",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q408"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Mafic-ultramafic VMS",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q409"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Mafic-siliciclastic VMS",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q410"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Bimodal-mafic VMS",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q411"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Bimodal felsic VMS",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q412"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Felsic-siliciclastic VMS",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q413"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Algoma-type banded iron formation",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q414"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Volcanogenic manganese",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q415"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Low-sulfidation (LS) epithermal gold-silver",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q416"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Intermediate-sulfidation (IS) epithermal silver-gold ± Zn, Pb, Cu, Sn, Mn",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q417"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "High-sulfidation (HS) epithermal silver-gold ± Cu",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q418"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Alkalic epithermal gold ± Ag",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q419"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Epithermal mercury",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q420"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Epithermal beryllium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q421"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Epithermal uranium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q422"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein ± replacement nickel",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q423"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein cobalt ± Ni",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q424"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein copper",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q425"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein tin",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q426"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein tungsten",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q427"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein tin polymetallic",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q428"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein fluorite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q429"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Vein polymetallic",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q430"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Breccia pipe copper",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q431"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Breccia pipe gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q432"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Breccia pipe molybdenum",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q433"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Breccia pipe REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q434"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Carlin-type gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q435"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Distal-disseminated silver-gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q436"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Replacement polymetallic",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q437"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Replacement gold-silver",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q438"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Replacement tin",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q439"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Replacement copper",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q440"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Replacement zinc-lead",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q441"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Replacement manganese",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q442"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Replacement magnesium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q443"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Replacement fluorite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q444"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn iron",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q445"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn copper",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q446"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn tungsten ± Mo",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q447"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn tin ± copper ± Mo",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q448"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn gold ± copper ± tungsten",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q449"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn zinc-lead-silver",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q450"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn molybdenum",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q451"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn beryllium-fluorite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q452"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Skarn uranium-REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q453"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Porphyry copper ± gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q454"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Porphyry copper-molybdenum",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q455"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Porphyry gold ± copper",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q456"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Climax-type porphyry molybdenum",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q457"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Low-fluorine porphyry molybdenum",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q458"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Porphyry tungsten",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q459"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Porphyry tin",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q460"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Greisen tin ±W-Mo",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q461"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Greisen tungsten-molybdenum±Bi",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q462"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Greisen beryllium±Li",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q463"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Reduced intrusion-related gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q464"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Oxidized intrusion-related gold",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q465"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Simple pegmatite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q466"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "LCT pegmatite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q467"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "NYF pegmatite",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q468"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Abyssal pegmatite REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q469"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Carbonatite REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q470"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Carbonatite niobium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q471"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Peralkaline igneous HFSE-REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q472"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Apatite-nepheline-titanite intrusion",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q473"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Apatite intrusion REE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q474"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Kimberlite diamond",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q475"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Komatiite nickel-copper-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q476"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "U-M layered intrusion chromium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q477"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "U-M layered intrusion nickel-copper-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q478"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "U-M layered intrusion PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q479"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "U-M layered intrusion iron-titanium-vanadium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q480"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "U-M intrusion nickel-copper-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q481"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "U-M conduit nickel-copper-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q482"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Ophiolite chromium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q483"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Ophiolite nickel-copper-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q484"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Arc U-M intrusion titanium-vanadium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q485"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Arc U-M intrusion nickel-copper-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q486"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Anorthosite massif titanium",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q487"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Anorthosite conduit nickel-copper-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q488"
+      },
+      {
+        "source": "Inferlink Extraction v3",
+        "confidence": 0.005208333333333333,
+        "observed_name": "Impact U-M intrusion nickel-copper-PGE",
+        "normalized_uri": "https://minmod.isi.edu/resource/Q489"
+      }
+    ],
+    "reference": [
+      {
+        "document": {
+          "uri": "https://api.dev-cdr.chs.usgs.gov/docs/documents/024747f3624ba65c39f20086bcce0fe43fc9ce5c246a1c382d09b237b3b2482b90",
+          "title": "Estimated monthly streamflows for selected locations on the Kabul and Logar Rivers, Aynak copper, cobalt, and chromium area of interest, Afghanistan, 1951-2010.pdf"
+        }
+      }
+    ],
+    "created_by": "https://minmod.isi.edu/users/s/inferlink",
+    "modified_at": "2025-07-31T21:48:41.283485Z"
   }
 ]
